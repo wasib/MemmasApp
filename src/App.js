@@ -23,7 +23,7 @@ class App extends Component {
       <Button.Content visible>Sign-up for a Pro account</Button.Content>
       <Button.Content hidden>$12.99 a month</Button.Content>
     </Button>
-  </div>
+  </div> 
     );
   }
 }
