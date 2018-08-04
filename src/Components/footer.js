@@ -1,4 +1,4 @@
-import React from "C:/Users/wasib/AppData/Local/Microsoft/TypeScript/2.9/node_modules/@types/react";
+import React from "react";
 import "../styles/Footer.css";
 import {List} from 'semantic-ui-react'
 

@@ -1,7 +1,12 @@
-import React, { Component } from "C:/Users/wasib/AppData/Local/Microsoft/TypeScript/2.9/node_modules/@types/react";
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import MenuComplete from "./Components/MenuComplete";
-import {Home} from './Components/Home'
-import {Footer} from './Components/footer'
+import { Home } from "./Components/Home";
+import { Contact } from "./Components/Contact";
+import { About } from "./Components/About";
+import { Product } from "./Components/Product";
+import { Services } from "./Components/Services";
+import { Footer } from "./Components/footer";
 import logo from "./logo.svg";
 import "./styles/App.css";
 
@@ -23,13 +28,19 @@ class App extends Component {
   render() {
     return (
       <div>
-        <MenuComplete activeItem={this.state.activeItem} changeActiveItem={this.changeActiveItem} />
+        <MenuComplete
+          activeItem={this.state.activeItem}
+          changeActiveItem={this.changeActiveItem}
+        />
         <Router>
-             <div>
-               <Route exact path="/" component={Home} />
-               <Route path="/attendance" component={Attendance} />
-               </div>  
-          </Router>
+          <div>
+            <Route exact path="/" component={Home} />
+            <Route path="/About" component={About} />
+            <Route path="/Product" component={Product} />
+            <Route path="/Services" component={Services} />
+            <Route path="/Contact" component={Contact} />
+          </div>
+        </Router>
         <Footer />
       </div>
     );
