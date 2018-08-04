@@ -23,6 +23,7 @@ class App extends Component {
     this.setState({
       activeItem: newItem
     });
+     this.props.history.push("/"+newItem);
   }
 
   render() {
@@ -39,6 +40,12 @@ class App extends Component {
             <Route path="/Product" component={Product} />
             <Route path="/Services" component={Services} />
             <Route path="/Contact" component={Contact} />
+            {/* If props need to be passed use this:
+             <Route
+              path='/dashboard'
+             render={(props) => <Dashboard {...props} isAuthed={true} />}
+              />
+             */}
           </div>
         </Router>
         <Footer />
