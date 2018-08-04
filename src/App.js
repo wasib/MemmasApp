@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './style/App.css';
 import { Button,Icon } from 'semantic-ui-react'
 
 class App extends Component {
