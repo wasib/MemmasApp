@@ -1,0 +1,23 @@
+.flexbox {
+  display: inline-flex;
+  height: 300px;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  background-color: #12163f;
+  color: #9b9ba1;
+}
+
+a {
+  color: #9b9ba1;
+}
+
+#name {
+  color: #dadade;
+}
+
+i {
+  color: #dadade;
+}

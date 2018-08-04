@@ -1,29 +1,32 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './style/App.css';
-import { Button,Icon } from 'semantic-ui-react'
+import React, { Component } from "react";
+import MenuComplete from "./Components/MenuComplete";
+import {Home} from './Components/home'
+import {Footer} from './Components/footer'
+import logo from "./logo.svg";
+import "./styles/App.css";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeItem: "Home"
+    };
+    this.changeActiveItem = this.changeActiveItem.bind(this);
+  }
+
+  changeActiveItem(newItem) {
+    this.setState({
+      activeItem: newItem
+    });
+  }
+
   render() {
     return (
       <div>
-    <Button animated>
-      <Button.Content visible>Next</Button.Content>
-      <Button.Content hidden>
-        <Icon name='arrow right' />
-      </Button.Content>
-    </Button>
-    <Button animated='vertical'>
-      <Button.Content hidden>Shop</Button.Content>
-      <Button.Content visible>
-        <Icon name='shop' />
-      </Button.Content>
-    </Button>
-    <Button animated='fade'>
-      <Button.Content visible>Sign-up for a Pro account</Button.Content>
-      <Button.Content hidden>$12.99 a month</Button.Content>
-    </Button>
-  </div>
+        <MenuComplete activeItem={this.state.activeItem} changeActiveItem={this.changeActiveItem} />
+        <Home />
+        <Footer />
+      </div>
     );
   }
 }
