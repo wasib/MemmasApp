@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import MenuComplete from "./Components/MenuComplete";
 import { Home } from "./Components/Home";
 import { Contact } from "./Components/Contact";
@@ -11,29 +11,11 @@ import logo from "./logo.svg";
 import "./styles/App.css";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      activeItem: "Home"
-    };
-    this.changeActiveItem = this.changeActiveItem.bind(this);
-  }
-
-  changeActiveItem(newItem) {
-    this.setState({
-      activeItem: newItem
-    });
-     this.props.history.push("/"+newItem);
-  }
-
   render() {
     return (
-      <div>
-        <MenuComplete
-          activeItem={this.state.activeItem}
-          changeActiveItem={this.changeActiveItem}
-        />
-        <Router>
+      <Router>
+        <div>
+          <MenuComplete />
           <div>
             <Route exact path="/" component={Home} />
             <Route path="/About" component={About} />
@@ -47,9 +29,10 @@ class App extends Component {
               />
              */}
           </div>
-        </Router>
-        <Footer />
-      </div>
+
+          <Footer />
+        </div>
+      </Router>
     );
   }
 }

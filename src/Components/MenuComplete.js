@@ -1,9 +1,22 @@
 import React from 'react'
-import  {MenuBar}  from "./Menu";
+import  MenuBar  from "./Menu";
+import { withRouter } from "react-router-dom";
 import {Sticky} from 'semantic-ui-react'
 
  class MenuComplete extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeItem: this.props.location.pathname==='/'?'/Home':this.props.location.pathname
+    };
+    this.changeActiveItem = this.changeActiveItem.bind(this);
+  }
 
+  changeActiveItem(newItem) {
+    this.setState({
+      activeItem: newItem
+    });
+  }
   render() {
     return (
       <Sticky>
@@ -19,7 +32,7 @@ import {Sticky} from 'semantic-ui-react'
           </td>
 
           <td width="85%">
-            <MenuBar activeItem={this.props.activeItem} changeActiveItem={this.props.changeActiveItem}/>
+            <MenuBar activeItem={this.state.activeItem} changeActiveItem={this.changeActiveItem}/>
           </td>
         </tr>
       </table>
@@ -28,4 +41,4 @@ import {Sticky} from 'semantic-ui-react'
   }
 }
 
-export default MenuComplete;
+export default withRouter(MenuComplete);
