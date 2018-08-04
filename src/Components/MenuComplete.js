@@ -1,5 +1,5 @@
 import React from "react";
-import  {MenuBar}  from "./menu";
+import  {MenuBar}  from "./Menu";
 import {Sticky} from 'semantic-ui-react'
 
  class MenuComplete extends React.Component {

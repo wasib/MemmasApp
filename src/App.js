@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import MenuComplete from "./Components/MenuComplete";
-import { Home } from "./Components/Home";
-import { Contact } from "./Components/Contact";
-import { About } from "./Components/About";
-import { Product } from "./Components/Product";
-import { Services } from "./Components/Services";
-import { Footer } from "./Components/footer";
+import MenuComplete from "./components/MenuComplete";
+import { Home } from "./components/Home";
+import { Contact } from "./components/Contact";
+import { About } from "./components/About";
+import { Product } from "./components/Product";
+import { Services } from "./components/Services";
+import { Footer } from "./components/Footer";
 import logo from "./logo.svg";
 import "./styles/App.css";
 
