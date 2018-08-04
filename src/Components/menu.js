@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react'
 import { Menu } from "semantic-ui-react";
 
 export class MenuBar extends Component {

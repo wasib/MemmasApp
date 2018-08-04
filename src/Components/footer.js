@@ -1,12 +1,13 @@
 import React from "react";
 import "../styles/Footer.css";
-import {List} from 'semantic-ui-react'
+import { List } from "semantic-ui-react";
 
 export const Footer = () => {
   return (
     <div className="flexbox">
       <img
-        width="100" height='100'
+        width="100"
+        height="100"
         style={{ margin: "5px" }}
         src="https://st.depositphotos.com/2274151/3518/i/950/depositphotos_35186549-stock-photo-sample-grunge-red-round-stamp.jpg"
         alt="Image"
@@ -15,12 +16,11 @@ export const Footer = () => {
       <List>
         <List.Item>
           <List.Content id="name">SawApps, Inc.</List.Content>
-        </List.Item><br/>
+        </List.Item>
+        <br />
         <List.Item>
           <List.Icon name="copyright outline" />
-          <List.Content>
-           2018 SawApps. All rights reserved.
-          </List.Content>
+          <List.Content>2018 SawApps. All rights reserved.</List.Content>
         </List.Item>
         <List.Item>
           <List.Content>Designed by SawApps</List.Content>
@@ -28,17 +28,15 @@ export const Footer = () => {
       </List>
 
       <List>
-      <List.Item>
-      <List.Icon name='mail' />
-      <List.Content>
-        <a href='mailto:sale@memmas.com'>sale@memmas.com</a>
-      </List.Content>
-    </List.Item>
+        <List.Item>
+          <List.Icon name="mail" />
+          <List.Content>
+            <a href="mailto:sale@memmas.com">sale@memmas.com</a>
+          </List.Content>
+        </List.Item>
         <List.Item>
           <List.Icon name="phone" />
-          <List.Content>
-            +44 987 065 908
-          </List.Content>
+          <List.Content>+44 987 065 908</List.Content>
         </List.Item>
       </List>
 
@@ -71,7 +69,7 @@ export const Footer = () => {
           </List.Content>
         </List.Item>
       </List>
-      <br/>
+      <br />
     </div>
   );
 };

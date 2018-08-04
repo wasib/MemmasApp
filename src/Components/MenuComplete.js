@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import  {MenuBar}  from "./Menu";
 import {Sticky} from 'semantic-ui-react'
 
