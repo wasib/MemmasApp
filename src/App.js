@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route } from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import MenuComplete from "./Components/MenuComplete";
 import { Home } from "./Components/Home";
 import { Contact } from "./Components/Contact";
