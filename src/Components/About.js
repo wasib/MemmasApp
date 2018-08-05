@@ -1,7 +1,11 @@
 import React from "react";
 
-export const About = () => {
-  return (
+export class About extends React.Component {
+  componentDidMount(){
+    window.scrollTo(0,0);
+  }
+  render() {
+    return (
     <div>
       <h1>I am About</h1>
       <h1>I am About</h1>
@@ -37,4 +41,5 @@ export const About = () => {
       <h1>I am About</h1>
     </div>
   );
-};
+}
+}

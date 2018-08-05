@@ -12,8 +12,9 @@ import "./styles/App.css";
 
 class App extends Component {
   render() {
+
     return (
-      <Router>
+      <Router>{/*onUpdate={() => {document.body.scrollTo(0, 0); }}  history={createBrowserHistory()}>*/}
         <div>
           <MenuComplete />
           <div style={{marginTop:'75px'}}>
