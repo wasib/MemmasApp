@@ -1,6 +1,7 @@
 import React from "react";
 import { Header, Icon, Grid, Image, Container,Button } from "semantic-ui-react";
 import image from "../images/image.png";
+import {Link} from 'react-router-dom'
 
 export class About extends React.Component {
   componentDidMount() {
@@ -49,7 +50,8 @@ export class About extends React.Component {
               Let us know what youre looking for in an agency. We'll take a look and see if
               this could be the start of something beautiful
             </Header.Subheader>
-            <button class="ui button" role="button" onClick={()=>{this.props.history.push('/Contact')}}>Let's Talk</button>
+            <Link to="/Contact"><button class="ui button" role="button">Let's Talk</button></Link>
+            
           </Header>
           
         </div>
