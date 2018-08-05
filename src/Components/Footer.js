@@ -4,7 +4,7 @@ import { List } from "semantic-ui-react";
 
 export const Footer = () => {
   return (
-    <div className="flexbox">
+    <div className="footer-flexbox">
       <img
         width="100"
         height="100"

@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import MenuComplete from "./components/MenuComplete";
-import { Home } from "./components/Home";
-import { Contact } from "./components/Contact";
-import { About } from "./components/About";
-import { Product } from "./components/Product";
-import { Services } from "./components/Services";
-import { Footer } from "./components/Footer";
+import MenuComplete from "./Components/MenuComplete";
+import { Home } from "./Components/Home";
+import { Contact } from "./Components/Contact";
+import { About } from "./Components/About";
+import { Product } from "./Components/Product";
+import { Services } from "./Components/Services";
+import { Footer } from "./Components/Footer";
 import logo from "./logo.svg";
 import "./styles/App.css";
 
@@ -17,8 +17,9 @@ class App extends Component {
       <Router>{/*onUpdate={() => {document.body.scrollTo(0, 0); }}  history={createBrowserHistory()}>*/}
         <div>
           <MenuComplete />
-          <div style={{marginTop:'75px'}}>
+          <div style={{marginTop:'100px'}}>
             <Route exact path="/" component={Home} />
+            <Route path="/Home" component={Home} />
             <Route path="/About" component={About} />
             <Route path="/Product" component={Product} />
             <Route path="/Services" component={Services} />
