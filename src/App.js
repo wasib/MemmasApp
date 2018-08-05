@@ -16,7 +16,7 @@ class App extends Component {
       <Router>
         <div>
           <MenuComplete />
-          <div>
+          <div style={{marginTop:'75px'}}>
             <Route exact path="/" component={Home} />
             <Route path="/About" component={About} />
             <Route path="/Product" component={Product} />
