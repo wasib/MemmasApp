@@ -3,6 +3,10 @@ import MenuBar from "./Menu";
 import { withRouter } from "react-router-dom";
 import { Sticky } from "semantic-ui-react";
 import "./../styles/MenuComplete.css";
+
+const invisible ={
+  display : 'none'
+};
 class MenuComplete extends React.Component {
   constructor(props) {
     super(props);
@@ -20,7 +24,7 @@ class MenuComplete extends React.Component {
   }
   render() {
     return (
-      <div className="wholeAppBar">
+      <div className="wholeAppBar" style={this.props.invisible?invisible:{}}>
         <table
           style={{
             width: "100%"
