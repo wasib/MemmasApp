@@ -2,6 +2,7 @@ import React from "react";
 import { Header, Icon, Grid, Image, Container,Button } from "semantic-ui-react";
 import image from "../images/image.png";
 import {Link} from 'react-router-dom'
+import '../styles/About.css'
 
 export class About extends React.Component {
   componentDidMount() {
@@ -10,7 +11,7 @@ export class About extends React.Component {
   render() {
     return (
       <div>
-        <div>
+        <div class="about-gradient">
           <Header size="Huge" icon textAlign="center">
             <Icon name="users" circular />
             <Header.Content>ABOUT US</Header.Content>

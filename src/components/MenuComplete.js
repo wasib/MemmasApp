@@ -2,6 +2,7 @@ import React from "react";
 import MenuBar from "./Menu";
 import { withRouter } from "react-router-dom";
 import "./../styles/MenuComplete.css";
+import logo from '../images/logo.png';
 class MenuComplete extends React.Component {
   constructor(props) {
     super(props);
@@ -32,7 +33,7 @@ class MenuComplete extends React.Component {
                 style={{
                   margin: "5px"
                 }}
-                src="https://st.depositphotos.com/2274151/3518/i/950/depositphotos_35186549-stock-photo-sample-grunge-red-round-stamp.jpg"
+                src={logo}
                 alt="Image"
               />
             </td>

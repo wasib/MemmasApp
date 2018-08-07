@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Footer.css";
 import { List } from "semantic-ui-react";
+import logo from '../images/logo.png';
 
 export const Footer = () => {
   return (
@@ -9,7 +10,7 @@ export const Footer = () => {
         width="100"
         height="100"
         style={{ margin: "5px" }}
-        src="https://st.depositphotos.com/2274151/3518/i/950/depositphotos_35186549-stock-photo-sample-grunge-red-round-stamp.jpg"
+        src={logo}
         alt="Image"
       />
 
