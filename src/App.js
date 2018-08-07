@@ -17,7 +17,7 @@ class App extends Component {
       <Router>{/*onUpdate={() => {document.body.scrollTo(0, 0); }}  history={createBrowserHistory()}>*/}
         <div>
           <MenuComplete />
-          <div style={{marginTop:'100px'}}>
+          <div>
             <Route exact path="/" component={Home} />
             <Route path="/Home" component={Home} />
             <Route path="/About" component={About} />

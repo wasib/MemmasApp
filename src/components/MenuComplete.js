@@ -1,7 +1,6 @@
 import React from "react";
 import MenuBar from "./Menu";
 import { withRouter } from "react-router-dom";
-import { Sticky } from "semantic-ui-react";
 import "./../styles/MenuComplete.css";
 class MenuComplete extends React.Component {
   constructor(props) {
