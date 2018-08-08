@@ -7,8 +7,6 @@ export const Footer = () => {
   return (
     <div className="footer-flexbox">
       <img
-        width="100"
-        height="100"
         style={{ margin: "5px" }}
         src={logo}
         alt="Image"
