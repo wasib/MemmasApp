@@ -5,6 +5,7 @@ import { Home } from "./components/Home";
 import { Contact } from "./components/Contact";
 import { About } from "./components/About";
 import { Product } from "./components/Product";
+import { ProductView } from "./components/ProductView";
 import { Services } from "./components/Services";
 import { Footer } from "./components/Footer";
 import logo from "./logo.svg";
@@ -21,7 +22,8 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/Home" component={Home} />
             <Route path="/About" component={About} />
-            <Route path="/Product" component={Product} />
+            <Route exact path="/Product" component={Product} />
+            <Route path="/Product/:id" component={ProductView} />
             <Route path="/Services" component={Services} />
             <Route path="/Contact" component={Contact} />
             {/* If props need to be passed use this:
