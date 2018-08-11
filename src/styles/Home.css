@@ -20,3 +20,8 @@
     flex-flow: row wrap;
     justify-content: space-evenly;
   }
+
+  .about-us{
+      height: 200px;
+      text-align: center;
+  }

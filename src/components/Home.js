@@ -49,8 +49,8 @@ export class Home extends React.Component {
               without foul moveth dry first heaven fruit dominonshed wont very
               all
             </Header.Subheader>
-            <img src={signature} alt="signature" />
           </Header>
+          <img src={signature} alt="signature" />
         </div>
 
         <div className="our-work-process">
@@ -78,7 +78,6 @@ export class Home extends React.Component {
                 "Outstanding job and exceeded all expectations. It was a
                 pleasure to work with them on a sizable first project and am
                 looking forward to startthe next one asap."
-                <h6>Michael Hopkins</h6>
               </h3>
             </div>
             <div>
