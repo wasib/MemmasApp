@@ -1,11 +1,29 @@
 .home-top{
-    display:inline-flex;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+   align-items: center;
+}
+
+.home-top-text{
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+  justify-content: center;
+}
+
+.home-header{
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.home-image{
 }
 
 .ant-carousel .slick-slide {
     text-align: center;
-    height: 300px;
-    line-height: 300px;
+    height: 400px;
+    line-height: 400px;
     background: #364d79;
     overflow: hidden;
   }
@@ -19,9 +37,47 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 10%;
+    margin-right: 10%;
   }
 
   .about-us{
-      height: 200px;
-      text-align: center;
+      
+      display:flex;
+    text-align: center;
+    flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .about-text{
+
+  }
+
+  .our-work-process{
+      
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .need-a-project{
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 10%;
+    margin-right: 10%;
   }
