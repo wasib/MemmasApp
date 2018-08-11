@@ -1,16 +1,15 @@
 import React from "react";
 import "../styles/Footer.css";
 import { List } from "semantic-ui-react";
-import logo from '../images/logo.png';
+import logo from "../images/logo.png";
 
 export const Footer = () => {
   return (
     <div className="footer-flexbox">
-      <img
-        style={{ margin: "5px" }}
-        src={logo}
-        alt="logo"
-      />
+      <div className="footer-image">
+        {" "}
+        <img  src={logo} alt="logo" />
+      </div>
 
       <List>
         <List.Item>

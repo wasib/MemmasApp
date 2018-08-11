@@ -8,6 +8,8 @@
   align-content: center;
   background-color: #11153f;
   color: #9b9ba1;
+  padding-left: 5%;
+  padding-right:5%;
 }
 
 a {
@@ -20,4 +22,25 @@ a {
 
 i {
   color: #dadade;
+}
+
+.footer-image {
+  width:20%;
+  height:auto;
+}
+
+.footer-image img{
+  height: auto;
+  width:100%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .footer-flexbox{
+    font-size:12px;
+  }
+  .footer-image{
+    width:30%;
+    height:auto;
+  }
 }

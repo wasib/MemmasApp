@@ -5,7 +5,7 @@
   transition: height 0.3s ease-out;
   position: fixed;
   top: 0;
-  background: linear-gradient(#11153f, #184563);
+  background: #11153f;
   z-index: 1000;
   justify-content: flex-end;
 }

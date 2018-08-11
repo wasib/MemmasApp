@@ -1,5 +1,6 @@
 import React from "react";
 import { Form } from "semantic-ui-react";
+import '../styles/ContactForm.css'
 
 class ContactForm extends React.Component {
   render() {
@@ -13,7 +14,7 @@ class ContactForm extends React.Component {
           <Form.Input placeholder="Your Title" />
           <Form.TextArea placeholder="Your Comment" />
 
-          <Form.Button>SEND MESSAGE</Form.Button>
+          <Form.Button color='blue'>SEND MESSAGE</Form.Button>
         </Form>
       </div>
     );
