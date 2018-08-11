@@ -34,7 +34,7 @@ class MenuComplete extends React.Component {
                   margin: "5px"
                 }}
                 src={logo}
-                alt="Image"
+                alt="logo"
               />
             </td>
 

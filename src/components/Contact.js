@@ -1,12 +1,12 @@
 import React from "react";
-import { Header, Icon, Grid, Image, Container, List } from "semantic-ui-react";
+import { Header, Icon, Grid, Container, List } from "semantic-ui-react";
 import ContactForm from "./ContactForm";
 
 export const Contact = () => {
   return (
     <div>
       <div>
-        <Header size="Huge" icon textAlign="center">
+        <Header size="huge" icon textAlign="center">
           <Icon name="users" circular />
           <Header.Content>ABOUT US</Header.Content>
         </Header>

@@ -9,7 +9,7 @@ export const Footer = () => {
       <img
         style={{ margin: "5px" }}
         src={logo}
-        alt="Image"
+        alt="logo"
       />
 
       <List>

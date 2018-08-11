@@ -21,7 +21,7 @@ export class Home extends React.Component {
       <div className="home">
         <div className="home-top">
           <div className="home-image">
-            <img src={homeImage} alt="home-image" />
+            <img src={homeImage} alt="home" />
           </div>
           <div className="home-top-text">
             <Header as="h2" icon textAlign="center">
@@ -32,7 +32,7 @@ export class Home extends React.Component {
                 websites and mobile apps.
               </Header.Subheader>
               <Link to="/Contact">
-                <button className="ui button" role="button">
+                <button className="ui button" >
                   CONTACT US
                 </button>
               </Link>
@@ -64,6 +64,7 @@ export class Home extends React.Component {
               width="965"
               height="543"
               src="https://www.youtube.com/embed/kJQP7kiw5Fk"
+              title='video'
               frameBorder="0"
               allow="autoplay; encrypted-media"
               allowFullScreen

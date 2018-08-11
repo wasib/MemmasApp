@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Icon, Grid, Image, Container,Button } from "semantic-ui-react";
+import { Header, Icon, Grid, Image, Container } from "semantic-ui-react";
 import image from "../images/image.png";
 import {Link} from 'react-router-dom'
 import '../styles/About.css'
@@ -11,8 +11,8 @@ export class About extends React.Component {
   render() {
     return (
       <div>
-        <div class="about-gradient">
-          <Header size="Huge" icon textAlign="center">
+        <div className="about-gradient">
+          <Header size="huge" icon textAlign="center">
             <Icon name="users" circular />
             <Header.Content>ABOUT US</Header.Content>
             <Header.Subheader>
@@ -51,7 +51,7 @@ export class About extends React.Component {
               Let us know what youre looking for in an agency. We'll take a look and see if
               this could be the start of something beautiful
             </Header.Subheader>
-            <Link to="/Contact"><button class="ui button" role="button">Let's Talk</button></Link>
+            <Link to="/Contact"><button className="ui button" >Let's Talk</button></Link>
             
           </Header>
           

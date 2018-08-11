@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, withRouter } from "react-router-dom";
+import { Link, withRouter, Redirect } from "react-router-dom";
 import DisplayProduct from "./DisplayProduct";
 import PRODUCTSINFO from "./ProductsInfo";
 import "../styles/ProductView.css";
@@ -30,18 +30,18 @@ class ProductView extends React.Component {
   getData(id) {
     let jsonObject = PRODUCTSINFO;
 
-    let previousObject = null;
+    let previousObject = " ";
 
-    let nextObject = null;
+    let nextObject = " ";
 
     let currentObject = null;
 
     for (var i = 0; i < jsonObject.length; i++) {
-      if (id == jsonObject[i].id) {
+      if (id === jsonObject[i].id) {
         nextObject = jsonObject[(i + 1) % jsonObject.length];
         currentObject = jsonObject[i % jsonObject.length];
 
-        if (i != 0) previousObject = jsonObject[(i - 1) % jsonObject.length];
+        if (i !== 0) previousObject = jsonObject[(i - 1) % jsonObject.length];
         else previousObject = jsonObject[jsonObject.length - 1];
       }
     }
@@ -53,21 +53,25 @@ class ProductView extends React.Component {
   }
 
   render() {
-    return (
-      <div>
-        <div className="product">
-          <DisplayProduct data={this.state.data} />
-        </div>
-        <div className="prev-next">
-          <div className="prev">
-            <Link to={this.state.prev}>Previous Project</Link>
+    if (this.state.data === null) {
+      return <Redirect to="../Product" />;
+    } else {
+      return (
+        <div>
+          <div className="product">
+            <DisplayProduct data={this.state.data} />
           </div>
-          <div className="next">
-            <Link to={this.state.next}>Next Project</Link>
+          <div className="prev-next">
+            <div className="prev">
+              <Link to={this.state.prev}>Previous Project</Link>
+            </div>
+            <div className="next">
+              <Link to={this.state.next}>Next Project</Link>
+            </div>
           </div>
         </div>
-      </div>
-    );
+      );
+    }
   }
 }
 

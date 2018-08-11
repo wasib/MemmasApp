@@ -1,20 +1,17 @@
 import React from "react";
-import bigProduct from "../images/bigProduct.svg";
 
 class DisplayProduct extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div>
         <div className="embedded-model">
-          <div class="sketchfab-embed-wrapper">
+          <div className="sketchfab-embed-wrapper">
             <iframe
               width="640"
               height="480"
               src={this.props.data.link}
-              frameborder="0"
+              title='title'
+              frameBorder="0"
               allow="autoplay; fullscreen; vr"
               mozallowfullscreen="true"
               webkitallowfullscreen="true"

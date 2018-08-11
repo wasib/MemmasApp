@@ -8,7 +8,7 @@ import { Product } from "./components/Product";
 import  ProductView  from "./components/ProductView";
 import { Services } from "./components/Services";
 import { Footer } from "./components/Footer";
-import logo from "./logo.svg";
+import {PageNotFound} from "./components/PageNotFound"
 import "./styles/App.css";
 
 class App extends Component {
@@ -27,6 +27,7 @@ class App extends Component {
               <Route path="/Product/:id" component={ProductView} />
               <Route path="/Services" component={Services} />
               <Route path="/Contact" component={Contact} />
+              <Route component={PageNotFound} />
             </Switch>
             {/* If props need to be passed use this:
              <Route
