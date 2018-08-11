@@ -14,7 +14,7 @@ export const PageNotFound = () => {
         width="320px"
         height="300px"
         viewBox="0 0 160 300"
-        enable-background="new 0 0 320 300"
+        enableBackground="new 0 0 320 300"
         space="preserve"
       >
         <rect
@@ -24,13 +24,13 @@ export const PageNotFound = () => {
           width="40.557"
           height="27.564"
         />
-        <g id="head" class="up">
+        <g id="head" className="up">
           <g id="leftAntenna">
             <path
               fill="none"
               stroke="#ccc"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
               d="M77.519,25.869
 		C75.85,13.604,65.745,3.39,53.972,3.39"
             >
@@ -73,8 +73,8 @@ export const PageNotFound = () => {
             <path
               fill="none"
               stroke="#ccc"
-              stroke-width="1.5"
-              stroke-miterlimit="10"
+              strokeWidth="1.5"
+              strokeMiterlimit="10"
               d="M82.48,25.869
 		C84.15,13.604,94.255,3.39,106.028,3.39"
             >
@@ -213,7 +213,7 @@ export const PageNotFound = () => {
         </g>
         <g id="upperTorso">
           <g id="leftArm">
-            <g class="forearm">
+            <g className="forearm">
               <path
                 fill="#333"
                 d="M9.068,131.177c-4.78,12.558-5.183,25.372-2.497,40.71c0,0,0.68,4.312,6.107,3.39
@@ -251,7 +251,7 @@ export const PageNotFound = () => {
             </g>
           </g>
           <g id="rightArm">
-            <g class="forearm">
+            <g className="forearm">
               <path
                 fill="#333"
                 d="M143.916,128.542c-4.583,1.875-2.833,6.6-2.833,6.6c4.124,10.89,4.241,21.746,1.89,35.134
@@ -303,7 +303,7 @@ export const PageNotFound = () => {
               d="M61.27,164.817c0-3.526-2.858-6.386-6.385-6.386c-3.527,0-6.386,2.859-6.386,6.386v0.001l0,0l0,36.132
 			c0,3.526,2.859,6.386,6.386,6.386c3.526,0,6.385-2.859,6.385-6.386L61.27,164.817L61.27,164.817L61.27,164.817z"
             />
-            <g class="lowerLeg">
+            <g className="lowerLeg">
               <path
                 fill="#333"
                 d="M61.27,200.63c0-3.526-2.858-6.386-6.385-6.386c-3.527,0-6.386,2.859-6.386,6.386v0.001l0,0l0,36.132
@@ -337,7 +337,7 @@ export const PageNotFound = () => {
               d="M98.73,164.817c0-3.526,2.858-6.386,6.385-6.386c3.527,0,6.386,2.859,6.386,6.386v0.001l0,0l0.001,36.132
 			c0,3.526-2.859,6.386-6.387,6.386c-3.525,0-6.385-2.859-6.385-6.386V164.817L98.73,164.817L98.73,164.817z"
             />
-            <g class="lowerLeg">
+            <g className="lowerLeg">
               <path
                 fill="#333"
                 d="M98.73,200.63c0-3.526,2.858-6.386,6.385-6.386c3.527,0,6.386,2.859,6.386,6.386v0.001l0,0l0.001,36.132
@@ -371,7 +371,7 @@ export const PageNotFound = () => {
           />
         </g>
       </svg>
-      <div class="col">
+      <div className="col">
         <h1>404</h1>
         <p>The page you are looking for does not exist...</p>
       </div>

@@ -28,7 +28,7 @@ class AppBar extends React.Component {
       <div className="AppBar" style={this.state.overridedStyle}>
         <div className="LeftPane">
           <Link to="../">
-            <img src={logo} width="120" height="50" />
+            <img src={logo} alt='logo' width="120" height="50" />
           </Link>
         </div>
         <div className="RightPane">
