@@ -30,9 +30,9 @@ class ProductView extends React.Component {
   getData(id) {
     let jsonObject = PRODUCTSINFO;
 
-    let previousObject = " ";
+    let previousObject = "";
 
-    let nextObject = " ";
+    let nextObject = "";
 
     let currentObject = null;
 

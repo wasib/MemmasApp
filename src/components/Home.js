@@ -47,7 +47,7 @@ export class Home extends React.Component {
               Divide have dont man wherin air fourth. Own itself make have night
               wont make. A you under seed appear which good give. Own give air
               without foul moveth dry first heaven fruit dominonshed wont very
-              all
+              all.
             </Header.Subheader>
           </Header>
           <img src={signature} alt="signature" />
