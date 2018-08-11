@@ -11,6 +11,7 @@ class NavMenu extends React.Component{
     this.handleItemClick = this
       .handleItemClick
       .bind(this);
+
   }
 
   handleItemClick(name) {
@@ -29,13 +30,15 @@ class NavMenu extends React.Component{
   }
   
   render(){
+    const active = this.props.location.pathname.toString().substr(1).trim();
+    console.log(active);
     return(
       <div className="NavMenu">
-        <span onClick={ ()=>{this.handleItemClick("Home")}}>Home</span>
-        <span onClick={ ()=> {this.handleItemClick("About")}}>About</span>
-        <span onClick={ ()=> {this.handleItemClick("Product")}}>Product</span>
-        <span onClick={ ()=>{this.handleItemClick("Services")}}>Services</span>
-        <span onClick={ ()=>{this.handleItemClick("Contact")}}>Contact</span>
+        <span onClick={ ()=>{this.handleItemClick("Home")}} style={(active=="")?{color:'lightblue'}:{color:'white'}}>Home</span>
+        <span onClick={ ()=> {this.handleItemClick("About")}} style={(active=="About")?{color:'lightblue'}:{color:'white'}}>About</span>
+        <span onClick={ ()=> {this.handleItemClick("Product")}} style={(active=="Product")?{color:'lightblue'}:{color:'white'}}>Product</span>
+        <span onClick={ ()=>{this.handleItemClick("Services")}} style={(active=="Services")?{color:'lightblue'}:{color:'white'}}>Services</span>
+        <span onClick={ ()=>{this.handleItemClick("Contact")}} style={(active=="Contact")?{color:'lightblue'}:{color:'white'}}>Contact</span>
       </div>
     );
   }

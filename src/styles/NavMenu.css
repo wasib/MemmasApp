@@ -9,9 +9,9 @@
 
 .NavMenu span
 {
-  line-height: 10vh; 
+  line-height: 60px; /*10vh;*/  
   cursor: pointer;
   color: white;
   user-select: none;
-  -moz-user-select: none
+  -moz-user-select: none  
 }

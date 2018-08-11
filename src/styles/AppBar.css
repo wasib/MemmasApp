@@ -1,13 +1,12 @@
 .AppBar
 {
   width : 100vw;
-  height: 10vh; 
+  height: 60px; /*10vh;*/ 
   transition: height 0.3s ease-out;
   position: fixed;
   top: 0;
   background: linear-gradient(#11153f, #184563);
-
-
+  z-index: 1000;
 }
 
 .LeftPane
@@ -41,7 +40,7 @@
 
 .Title
 {
-  line-height: 10vh;
+  line-height: 60px; /*10vh;*/ 
   width: auto; 
   color: white;
   cursor: pointer;

@@ -21,7 +21,7 @@ class App extends Component {
           {/*<MenuComplete />*/}
           <AppBar />
 
-          <div style={{marginTop:'10vh'}}>
+          <div style={{marginTop:'60px'}}> 
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/Home" component={Home} />
