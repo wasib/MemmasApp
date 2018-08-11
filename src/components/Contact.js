@@ -2,7 +2,14 @@ import React from "react";
 import { Header, Icon, Grid, Container, List } from "semantic-ui-react";
 import ContactForm from "./ContactForm";
 
-export const Contact = () => {
+export class Contact extends React.Component{
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
+  render(){
+
   return (
     <div>
       <div>
@@ -40,3 +47,4 @@ export const Contact = () => {
     </div>
   );
 };
+}

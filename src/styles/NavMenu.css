@@ -1,0 +1,17 @@
+.NavMenu
+{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  
+}
+
+.NavMenu span
+{
+  line-height: 60px; /*10vh;*/  
+  cursor: pointer;
+  color: white;
+  user-select: none;
+  -moz-user-select: none  
+}

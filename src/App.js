@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import MenuComplete from "./components/MenuComplete";
+import AppBar from "./components/AppBar";
 import { Home } from "./components/Home";
 import { Contact } from "./components/Contact";
 import { About } from "./components/About";
@@ -17,8 +18,10 @@ class App extends Component {
       <Router>
         {/*onUpdate={() => {document.body.scrollTo(0, 0); }}  history={createBrowserHistory()}>*/}
         <div>
-          <MenuComplete />
-          <div>
+          {/*<MenuComplete />*/}
+          <AppBar />
+
+          <div style={{marginTop:'60px'}}> 
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/Home" component={Home} />
