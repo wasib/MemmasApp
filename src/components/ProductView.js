@@ -1,10 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import DisplayProduct from "./DisplayProduct";
 import PRODUCTSINFO from "./ProductsInfo";
 import "../styles/ProductView.css";
 
-export class ProductView extends React.Component {
+class ProductView extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -45,11 +45,11 @@ export class ProductView extends React.Component {
         else previousObject = jsonObject[jsonObject.length - 1];
       }
     }
-      this.setState({
-        data: currentObject,
-        prev: "/Product/" + previousObject.id,
-        next: "/Product/" + nextObject.id
-      });
+    this.setState({
+      data: currentObject,
+      prev: "/Product/" + previousObject.id,
+      next: "/Product/" + nextObject.id
+    });
   }
 
   render() {
@@ -70,3 +70,5 @@ export class ProductView extends React.Component {
     );
   }
 }
+
+export default withRouter(ProductView);

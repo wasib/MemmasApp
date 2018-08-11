@@ -1,13 +1,6 @@
 import React from "react";
-import {
-  Header,
-  Icon,
-  Grid,
-  Image,
-  Container,
-  List,
-  Form
-} from "semantic-ui-react";
+import { Header, Icon, Grid, Image, Container, List } from "semantic-ui-react";
+import ContactForm from "./ContactForm";
 
 export const Contact = () => {
   return (
@@ -39,16 +32,7 @@ export const Contact = () => {
               </Container>
             </Grid.Column>
             <Grid.Column width={8}>
-              <Form>
-                <Form.Group widths="equal">
-                  <Form.Input fluid placeholder="Your Name" />
-                  <Form.Input fluid placeholder="Your Email" />
-                </Form.Group>
-                <Form.Input placeholder="Your Title" />
-                <Form.TextArea placeholder="Your Comment" />
-
-                <Form.Button>SEND MESSAGE</Form.Button>
-              </Form>
+              <ContactForm />
             </Grid.Column>
           </Grid.Row>
         </Grid>

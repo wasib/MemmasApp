@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import MenuComplete from "./components/MenuComplete";
 import { Home } from "./components/Home";
 import { Contact } from "./components/Contact";
 import { About } from "./components/About";
 import { Product } from "./components/Product";
-import { ProductView } from "./components/ProductView";
+import  ProductView  from "./components/ProductView";
 import { Services } from "./components/Services";
 import { Footer } from "./components/Footer";
 import logo from "./logo.svg";
@@ -13,19 +13,21 @@ import "./styles/App.css";
 
 class App extends Component {
   render() {
-
     return (
-      <Router>{/*onUpdate={() => {document.body.scrollTo(0, 0); }}  history={createBrowserHistory()}>*/}
+      <Router>
+        {/*onUpdate={() => {document.body.scrollTo(0, 0); }}  history={createBrowserHistory()}>*/}
         <div>
           <MenuComplete />
           <div>
-            <Route exact path="/" component={Home} />
-            <Route path="/Home" component={Home} />
-            <Route path="/About" component={About} />
-            <Route exact path="/Product" component={Product} />
-            <Route path="/Product/:id" component={ProductView} />
-            <Route path="/Services" component={Services} />
-            <Route path="/Contact" component={Contact} />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/Home" component={Home} />
+              <Route path="/About" component={About} />
+              <Route exact path="/Product" component={Product} />
+              <Route path="/Product/:id" component={ProductView} />
+              <Route path="/Services" component={Services} />
+              <Route path="/Contact" component={Contact} />
+            </Switch>
             {/* If props need to be passed use this:
              <Route
               path='/dashboard'
