@@ -12,6 +12,7 @@ class MenuComplete extends React.Component {
           ? "/Home"
           : this.props.location.pathname
     };
+    
     this.changeActiveItem = this.changeActiveItem.bind(this);
   }
 

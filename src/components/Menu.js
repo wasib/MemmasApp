@@ -6,6 +6,7 @@ import './../styles/Menu.css';
 class MenuBar extends Component {
   constructor(props) {
     super(props);
+    
 
     this.handleItemClick = this
       .handleItemClick
@@ -45,7 +46,7 @@ class MenuBar extends Component {
           <Menu.Item
             className="menuitem"
             style=
-            { activeItem === "/About" ? {backgroundColor:'#fae4e4'} : {backgroundColor:'white'} }
+            { activeItem === "/About" ? {backgroundColor:''} : {backgroundColor:'white'} }
             name="About"
             active={activeItem === "/About"}
             onClick={this.handleItemClick}/>
