@@ -1,41 +1,38 @@
 .AppBar
 {
-  width : 100vw;
-  height: 60px; /*10vh;*/ 
+  display: flex;
+  width:100%;
   transition: height 0.3s ease-out;
   position: fixed;
   top: 0;
   background: linear-gradient(#11153f, #184563);
   z-index: 1000;
+  justify-content: flex-end;
 }
 
 .LeftPane
 {
   height: 100%;
-  width: 20vw; 
   float: left;
   display: flex;
   flex-direction: row;
   align-content: flex-start;
-  justify-content: flex-start;
+  margin-right: auto;
+  margin-left:5%;
+ 
 }
 
 .LeftPane img{
   cursor: pointer;
   margin: 5px;
 }
-.CenterPane
-{
-  height: 100%;
-  width: 40vw; 
-  float: left;
-}
+
 
 .RightPane
 {
   height: 100%;
-  width: 40vw; 
-  float: left;
+  width:40%;
+  margin-right: 5%;
 }
 
 .Title

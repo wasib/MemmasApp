@@ -22,7 +22,7 @@ export class Home extends React.Component {
       <div className="home">
         <div className="home-top">
           <div className="home-image">
-            <Image src={homeImage} size='large' />
+            <Image src={homeImage} size='massive' />
           </div>
           <div className="home-top-text">
             <div className="home-header">

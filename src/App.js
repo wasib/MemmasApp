@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import MenuComplete from "./components/MenuComplete";
 import AppBar from "./components/AppBar";
 import { Home } from "./components/Home";
 import { Contact } from "./components/Contact";
