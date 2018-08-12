@@ -9,6 +9,7 @@
 
 .NavMenu span
 {
+  font-size: 110%;
   line-height: 60px; /*10vh;*/  
   cursor: pointer;
   color: white;
