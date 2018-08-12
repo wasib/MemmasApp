@@ -12,7 +12,7 @@
   padding-right:5%;
 }
 
-a {
+.footer-flexbox a {
   color: #9b9ba1;
 }
 
@@ -20,7 +20,7 @@ a {
   color: #dadade;
 }
 
-i {
+.footer-flexbox i {
   color: #dadade;
 }
 

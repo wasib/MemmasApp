@@ -1,4 +1,18 @@
 .prev-next {
   display: inline-flex;
-  margin-top: 30px;
+  justify-content: space-between;
+  width:100%;
+  height: 100px;
+  align-items: center;
+  background-color: #d2d2d2;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.prev-next i{
+  color:black;
+}
+
+.prev-next a{
+  color:black;
 }

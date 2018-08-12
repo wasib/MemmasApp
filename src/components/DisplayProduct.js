@@ -1,16 +1,16 @@
 import React from "react";
+import "../styles/DisplayProduct.css";
 
 class DisplayProduct extends React.Component {
   render() {
     return (
-      <div>
+      <div classname="display-product">
         <div className="embedded-model">
           <div className="sketchfab-embed-wrapper">
             <iframe
-              width="640"
-              height="480"
+              className="resp-iframe"
               src={this.props.data.link}
-              title='title'
+              title="title"
               frameBorder="0"
               allow="autoplay; fullscreen; vr"
               mozallowfullscreen="true"

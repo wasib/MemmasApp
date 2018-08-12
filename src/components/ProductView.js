@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, withRouter, Redirect } from "react-router-dom";
+import { Icon } from "semantic-ui-react";
 import DisplayProduct from "./DisplayProduct";
 import PRODUCTSINFO from "./ProductsInfo";
 import "../styles/ProductView.css";
@@ -63,10 +64,15 @@ class ProductView extends React.Component {
           </div>
           <div className="prev-next">
             <div className="prev">
-              <Link to={this.state.prev}>Previous Project</Link>
+              <Link to={this.state.prev}><Icon name="angle left" size='large' />PREVIOUS</Link>
+            </div>
+            <div className="middle">
+              <Link to='/Product'>
+                <Icon name="th large" />
+              </Link>
             </div>
             <div className="next">
-              <Link to={this.state.next}>Next Project</Link>
+              <Link to={this.state.next}>NEXT<Icon name="angle right" size='large' /></Link>
             </div>
           </div>
         </div>

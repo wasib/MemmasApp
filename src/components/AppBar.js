@@ -36,7 +36,7 @@ class AppBar extends React.Component {
           <NavMenu />
         </div>
         <div className="sidebar-button">
-          <Button icon='bars' onClick={this.props.handleButtonClick}>
+          <Button icon='content' onClick={this.props.handleButtonClick}>
           </Button>
         </div>
       </div>
