@@ -27,8 +27,8 @@ export class Home extends React.Component {
           <div className="home-top-text">
             <div className="home-header">
               <Header as="h2" icon textAlign="center">
-                <Header.Content>We Design and Develop</Header.Content><br/>
-                <Header.Subheader>
+                <Header.Content style={{color:"white"}}>We Design and Develop</Header.Content><br/>
+                <Header.Subheader style={{color:"white"}}>
                   We are a new design studio based in USA. We have over 20 years
                   of Combined experience, and know a thing or two about
                   designing websites and mobile apps.
