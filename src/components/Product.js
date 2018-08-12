@@ -9,6 +9,7 @@ export class Product extends React.Component {
   render() {
     return (
       <div>
+<<<<<<< HEAD
         <div className="product-gradient">
           <h2>
             <br />
@@ -17,6 +18,15 @@ export class Product extends React.Component {
           </h2>
         </div>
         <ProductList />
+=======
+        <div className="product-gradient" >
+          <h2 style={{
+          color: 'white',
+          paddingTop:'15px'
+        }}>Products</h2>
+        </div>
+        <ProductList/>
+>>>>>>> minutecss
       </div>
     );
   }

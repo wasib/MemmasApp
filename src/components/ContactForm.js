@@ -6,7 +6,7 @@ class ContactForm extends React.Component {
   render() {
     return (
       <div>
-        <Form>
+        <Form style={{margin:'0px 15px 0px px'}}> 
           <Form.Group widths="equal">
             <Form.Input fluid placeholder="Your Name" />
             <Form.Input fluid placeholder="Your Email" />
