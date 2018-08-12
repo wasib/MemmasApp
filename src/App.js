@@ -22,7 +22,10 @@ class App extends Component {
     this.handleButtonClick = this.handleButtonClick.bind(this);
   }
 
-  handleButtonClick = () => this.setState({ visible: !this.state.visible });
+  handleButtonClick = () => {
+    window.scrollTo(0, 0);
+    this.setState({ visible: !this.state.visible });
+  };
 
   handleSidebarHide = () => this.setState({ visible: false });
 

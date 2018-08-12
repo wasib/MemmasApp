@@ -15,7 +15,7 @@ export class Contact extends React.Component{
       <div>
         <Header size="huge" icon textAlign="center">
           <Icon name="users" circular />
-          <Header.Content>ABOUT US</Header.Content>
+          <Header.Content>CONTACT</Header.Content>
         </Header>
       </div>
 

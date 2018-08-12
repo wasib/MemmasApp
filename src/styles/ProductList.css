@@ -12,6 +12,9 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+  border-radius: 10px;
+box-shadow: 4px 6.928px 8px rgba(16,17,17,0.23); ;
+background-color: #11153f;
 }
 
 

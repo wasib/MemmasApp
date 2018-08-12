@@ -9,7 +9,13 @@ export class Product extends React.Component {
   render() {
     return (
       <div>
-        <div className="product-gradient">PRODUCT</div>
+        <div className="product-gradient">
+          <h2>
+            <br />
+            <br />
+            PRODUCT
+          </h2>
+        </div>
         <ProductList />
       </div>
     );
