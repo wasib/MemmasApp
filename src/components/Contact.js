@@ -14,13 +14,8 @@ export class Contact extends React.Component{
     <div>
     <div style={{margin:'20px 0px 20px 0px'}}>
         <Header size="huge" icon textAlign="center">
-<<<<<<< HEAD
-          <Icon name="users" circular />
-          <Header.Content>CONTACT</Header.Content>
-=======
           <Icon name="users" circular inverted teal  />
           <Header.Content style={{margin:'15px 0px 15px 0px'}}>About Us</Header.Content>
->>>>>>> minutecss
         </Header>
       </div>
 
