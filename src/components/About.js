@@ -14,8 +14,8 @@ export class About extends React.Component {
         <div className="about-gradient">
           <Header size="huge" icon textAlign="center">
             <Icon name="users" circular />
-            <Header.Content>ABOUT US</Header.Content>
-            <Header.Subheader>
+            <Header.Content style={{color:'white'}}>About Us</Header.Content>
+            <Header.Subheader style={{color:'white'}}>
               I am a Graphic and Web Designer based in New York, specializing in
               User Interface Design and Development.
             </Header.Subheader>
@@ -45,7 +45,7 @@ export class About extends React.Component {
           </Grid>
         </div>
         <div>
-          <Header as="h2" icon textAlign="center">
+          <Header as="h2" icon textAlign="center" style={{margin:'15px 0px 15px 0px'}}>
             <Header.Content>Need a Project?</Header.Content>
             <Header.Subheader>
               Let us know what youre looking for in an agency. We'll take a look and see if
