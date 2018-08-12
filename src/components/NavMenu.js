@@ -18,10 +18,12 @@ class NavMenu extends React.Component {
   }
 
   render() {
-    const active = this.props.location.pathname
+    let active = this.props.location.pathname
       .toString()
       .substr(1)
       .trim();
+    if(active.indexOf("/") != -1)      
+    active =  active.substr(0,active.indexOf("/"));
       
     return (
       <div className="NavMenu">
