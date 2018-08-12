@@ -8,6 +8,7 @@
   background: #11153f;
   z-index: 1000;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .LeftPane
@@ -42,4 +43,21 @@
   color: white;
   cursor: pointer;
   word-wrap: break-word;
+}
+
+.sidebar-button{
+  display:none;
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar-button{
+    display: block;
+  }
+  .RightPane{
+    display: none;
+  }
+
+  .sidebar-button i{
+    color:black;
+  }
 }

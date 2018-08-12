@@ -8,6 +8,8 @@
   background: linear-gradient(#11153f, #297bb3);
   background-size: 100% 85%;
   background-repeat: no-repeat;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .home-top-text {
