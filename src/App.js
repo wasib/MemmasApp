@@ -55,7 +55,7 @@ class App extends Component {
                 </Link>
                 <Link to="/About">
                   <Menu.Item>
-                    <Icon name="gamepad" />
+                    <Icon name="info" />
                     About
                   </Menu.Item>
                 </Link>

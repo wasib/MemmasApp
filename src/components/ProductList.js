@@ -10,7 +10,7 @@ class ProductList extends React.Component {
     PRODUCTSINFO.forEach(product => {
       let path = "/Product/" + product.id;
       products.push(
-        <div key={product.id}>
+        <div className='product-individual' key={product.id}>
           <Link to={path}>
             <img src={img1} alt="product-img" className="product-img" />
           </Link>

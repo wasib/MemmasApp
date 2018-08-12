@@ -1,5 +1,22 @@
-
-.product-list{
-    display:grid;
-    grid-template-columns:33% 33% 33%;
+.product-list {
+   display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-bottom:5%;
+    padding-left: 2.5%;
+    padding-right:2.5%;
+    align-content: center; 
 }
+
+.product-list > div > a > img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+.product-individual {
+
+  padding-bottom:5%;
+}
+
