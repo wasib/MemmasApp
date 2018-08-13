@@ -1,50 +1,50 @@
 import React from "react";
-import { Header, Icon, Grid, Container, List } from "semantic-ui-react";
+import "../styles/Contact.css";
+import { Header, List, Container } from "semantic-ui-react";
 import ContactForm from "./ContactForm";
 
-export class Contact extends React.Component{
-
+export class Contact extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
 
-  render(){
+  render() {
+    return (
+      <div>
+        <div className="contact-gradient">
+          <h2>CONTACT</h2>
+        </div>
 
-  return (
-    <div>
-    <div style={{margin:'20px 0px 20px 0px'}}>
-        <Header size="huge" icon textAlign="center">
-          <Icon name="users" circular inverted teal  />
-          <Header.Content style={{margin:'15px 0px 15px 0px'}}>About Us</Header.Content>
-        </Header>
+        <div className="middle-contact">
+          <div classname="left-contact-info">
+            <Container textAlign="justified">
+              <Header as="h2">Contact Info:</Header>
+              <p style={{ padding: "0px 15px 0px 15px" }}>
+                Domestic dogs inherited complex behaviors, such as bite
+                inhibition, from their wolf ancestors, which would have been
+                pack hunters with complex body language.
+              </p>
+              <List>
+                <List.Item>
+                  <b>Address:</b> 10111 Santa Monica Boulevard, LA
+                </List.Item>
+                <List.Item>
+                  <b>Phone:</b> +44 987 065 908
+                </List.Item>
+                <List.Item>
+                  <b>Email:</b> info@example.com
+                </List.Item>
+                <List.Item>
+                  <b>Fax:</b> +44 987 065 909
+                </List.Item>
+              </List>
+            </Container>
+          </div>
+          <div className="right-contact-form">
+            <ContactForm />
+          </div>
+        </div>
       </div>
-
-      <div style={{margin:'30px 0px 20px 0px'}}>
-        <Grid>
-          <Grid.Row>
-            <Grid.Column width={8} verticalAlign="middle">
-              <Container textAlign="justified">
-                <Header as="h2" style={{margin:'0px 15px 0px 15px'}}>Contact Info:</Header>
-                <p style={{padding:'0px 15px 0px 15px'}}>
-                  Domestic dogs inherited complex behaviors, such as bite
-                  inhibition, from their wolf ancestors, which would have been
-                  pack hunters with complex body language.
-                </p>
-                <List>
-                  <List.Item style={{padding:'0px 15px 0px 15px'}}>Address:</List.Item>
-                  <List.Item style={{padding:'0px 15px 0px 15px'}}>Phone:</List.Item>
-                  <List.Item style={{padding:'0px 15px 0px 15px'}}>Email</List.Item>
-                  <List.Item style={{padding:'0px 15px 0px 15px'}}>Fax</List.Item>
-                </List>
-              </Container>
-            </Grid.Column>
-            <Grid.Column width={8} >
-              <ContactForm />
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-      </div>
-    </div>
-  );
-};
+    );
+  }
 }
