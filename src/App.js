@@ -76,33 +76,37 @@ class App extends Component {
             </div>
 
             <Footer/> {console.log(visible)}
-            {visible
-              ? <div className="sidenav">
-                  <a href="javascript:void(0)" className="closebtn" onClick={this.closeNavBar}>&times;</a>
+            <div
+              className="sidenav"
+              style={visible
+              ? {
+                width: '100vw'
+              }
+              : {
+                width: '0vw'
+              }}>
+              <a href="javascript:void(0)" className="closebtn" onClick={this.closeNavBar}>&times;</a>
 
-                  <span
-                    onClick={() => {
-                    this.redirect("")
-                  }}>Home</span>
-                  <span
-                    onClick={() => {
-                    this.redirect("About")
-                  }}>About</span>
-                  <span
-                    onClick={() => {
-                    this.redirect("Product")
-                  }}>Product</span>
-                  <span
-                    onClick={() => {
-                    this.redirect("Services")
-                  }}>Services</span>
-                  <span
-                    onClick={() => {
-                    this.redirect("Contact")
-                  }}>Contact</span>
-                  
-                </div>
-              : <div/>}
+              <span onClick={() => {
+                this.redirect("")
+              }}>Home</span>
+              <span onClick={() => {
+                this.redirect("About")
+              }}>About</span>
+              <span
+                onClick={() => {
+                this.redirect("Product")
+              }}>Product</span>
+              <span
+                onClick={() => {
+                this.redirect("Services")
+              }}>Services</span>
+              <span
+                onClick={() => {
+                this.redirect("Contact")
+              }}>Contact</span>
+
+            </div>
 
           </div>
         </Router>
