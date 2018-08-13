@@ -4,3 +4,8 @@
   margin-bottom: -100px;
   text-align: center;
 }
+
+.product-gradient > h2 {
+  color: white;
+  padding-top: 15px;
+}

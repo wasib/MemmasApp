@@ -9,13 +9,12 @@ export class Product extends React.Component {
   render() {
     return (
       <div>
-        <div className="product-gradient" >
-          <h2 style={{
-          color: 'white',
-          paddingTop:'15px'
-        }}>Products</h2>
+        <div className="product-gradient">
+          <br />
+          <br />
+          <h2>Products</h2>
         </div>
-        <ProductList/>
+        <ProductList />
       </div>
     );
   }
