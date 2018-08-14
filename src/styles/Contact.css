@@ -11,23 +11,61 @@
 
 .middle-contact {
   display: inline-flex;
-  flex-flow: row wrap;
   justify-content: space-around;
   padding-bottom: 5%;
   align-content: center;
-  margin-top: 5%;
+  padding-top: 5%;
+  width: 100%;
+  background: #f5f5f5;
 }
 
 .left-contact-info {
-    max-width: 50%;
+  max-width: 40%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.left-contact-info >ul>li{
- list-style: none;
+.right-contact-form {
+  width: 60%;
+
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.left-contact-info>ul{
-  
- padding-left: 0%;
+.left-contact-info > ul > li {
+  list-style: none;
 }
 
+.left-contact-info > ul {
+  padding-left: 0%;
+}
+.mapouter {
+  text-align: right;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+}
+.maps-responsive {
+  width:100%;
+  height:100%;
+}
+@media only screen and (max-width: 768px) {
+  .middle-contact {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .left-contact-info {
+    max-width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+  }
+  .right-contact-form {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+  }
+}

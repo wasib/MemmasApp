@@ -41,6 +41,22 @@ export class Contact extends React.Component {
             <ContactForm />
           </div>
         </div>
+
+        <div>
+          <div className="mapouter">
+            <div className="gmap_canvas">
+              <iframe
+                className='maps-responsive'
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameBorder="0"
+                scrolling="no"
+                marginHeight="0"
+                marginWidth="0"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
