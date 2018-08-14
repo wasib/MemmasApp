@@ -11,6 +11,7 @@ import {Services} from "./components/Services";
 import {Footer} from "./components/Footer";
 import {PageNotFound} from "./components/PageNotFound";
 import "./styles/App.css";
+import { withRouter } from "react-router-dom";
 
 class App extends Component {
   constructor(props) {
@@ -28,6 +29,8 @@ class App extends Component {
     this.redirect = this
       .redirect
       .bind(this);
+
+      this.homeRef = React.createRef();
   }
 
   handleButtonClick = () => {
@@ -39,8 +42,13 @@ class App extends Component {
 
   closeNavBar = () => this.setState({visible: false});
   redirect = (target) => {
-    this.closeNavBar;
-    window.location = "/" + target;
+    this.closeNavBar();
+    //window.location = "/" + target;
+    if(target==""){
+      console.log("Homelinkclciekd")
+      //document.getElementById('homeLink').click();
+      this.homeRef.current().click();
+    }
     /*
     this
       .props
@@ -50,6 +58,7 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.props.history)
     console.log("render called");
     const {visible} = this.state;
 
@@ -106,6 +115,9 @@ class App extends Component {
                 this.redirect("Contact")
               }}>Contact</span>
 
+
+                        <Link class="nullible" ref={this.homeRef} to="/" >Home</Link>
+                        
             </div>
 
           </div>

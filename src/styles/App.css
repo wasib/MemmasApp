@@ -66,3 +66,9 @@
   font-size: 36px;
   margin-left: 50px;
 }
+
+.nullible{
+  height: 0;
+  width: 0;
+  display: none;
+}
