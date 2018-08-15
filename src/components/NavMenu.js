@@ -27,15 +27,15 @@ class NavMenu extends React.Component {
       
     return (
       <div className="NavMenu">
-        <span
+        <button className="btn btn-hover-3 link-1"
           onClick={() => {
             this.handleItemClick("Home");
           }}
           style={active === "" ? { color: "lightblue" } : { color: "white" }}
         >
           Home
-        </span>
-        <span
+        </button>
+        <button className="btn btn-hover-3 link-1"
           onClick={() => {
             this.handleItemClick("About");
           }}
@@ -44,8 +44,8 @@ class NavMenu extends React.Component {
           }
         >
           About
-        </span>
-        <span
+        </button>
+        <button className="btn btn-hover-3 link-1"
           onClick={() => {
             this.handleItemClick("Product");
           }}
@@ -54,8 +54,8 @@ class NavMenu extends React.Component {
           }
         >
           Product
-        </span>
-        <span
+        </button>
+        <button className="btn btn-hover-3 link-1"
           onClick={() => {
             this.handleItemClick("Services");
           }}
@@ -64,8 +64,8 @@ class NavMenu extends React.Component {
           }
         >
           Services
-        </span>
-        <span
+        </button>
+        <button className="btn btn-hover-3 link-1"
           onClick={() => {
             this.handleItemClick("Contact");
           }}
@@ -74,7 +74,7 @@ class NavMenu extends React.Component {
           }
         >
           Contact
-        </span>
+        </button>
       </div>
     );
   }

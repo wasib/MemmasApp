@@ -7,12 +7,32 @@
   
 }
 
-.NavMenu span
-{
-  font-size: 110%;
-  line-height: 60px; /*10vh;*/  
+.btn {
+  padding: 10px 20px;
+  border-radius: 0;
+  border: 1px solid #12124e;
+  color: #12124e;
+  transition: all 0.3s;
+  margin-right: 15px;
   cursor: pointer;
-  color: white;
-  user-select: none;
-  -moz-user-select: none  
+  outline: none;
+}
+.btn.btn-hover-3 {
+  border: 0 solid;
+  background-color: transparent;
+  position: relative;
+}
+.btn.btn-hover-3:before {
+  background-color: #297bb3;
+  height: 2px;
+  width: 0;
+  content: "";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  transition: all 0.5s;
+  z-index: 0;
+}
+.btn.btn-hover-3:hover:before {
+  width: 100%;
 }

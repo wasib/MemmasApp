@@ -1,11 +1,11 @@
 .product-list {
-   display:flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    padding-bottom:5%;
-    padding-left: 2.5%;
-    padding-right:2.5%;
-    align-content: center; 
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding-bottom: 5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  align-content: center;
 }
 
 .product-list > div > a > img {
@@ -13,13 +13,10 @@
   height: auto;
   object-fit: cover;
   border-radius: 10px;
-box-shadow: 4px 6.928px 8px rgba(16,17,17,0.23); ;
-background-color: #11153f;
+  box-shadow: 4px 6.928px 8px rgba(16, 17, 17, 0.23);
+  background-color: #11153f;
 }
-
 
 .product-individual {
-
-  padding-bottom:5%;
+  padding-bottom: 5%;
 }
-
