@@ -6,40 +6,17 @@ export class Services extends React.Component {
   }
   render() {
     return (
-    <div>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
-      <h1>I am Services</h1>
+    <div style={{overflow:'hidden', height:'1000px'}}>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <hr />
+      <h1 style={{textAlign:'center'}}>Services</h1>
+      <hr />
+      <h3 style={{textAlign:'center'}}>This page is yet to be done!</h3>
     </div>
   );
 }

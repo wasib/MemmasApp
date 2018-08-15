@@ -11,7 +11,7 @@ export class Contact extends React.Component {
     return (
       <div>
         <div className="contact-gradient">
-          <h2>CONTACT</h2>
+          <h2>Contact</h2>
         </div>
 
         <div className="middle-contact">
