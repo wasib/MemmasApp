@@ -6,7 +6,7 @@
   padding-left: 10%;
   padding-right: 10%;
   background:linear-gradient(#11153f, #297bb3);
-  background-size: 100% 85%;
+  background-size: 100% 82%;
   background-repeat: no-repeat;
   padding-top: 5px;
   padding-bottom: 5%;
@@ -91,6 +91,7 @@
   }
   .home-top{
       background-size: 100% 100%;
+      padding-top:5%;
   }
   .clients{
       padding-left: 10%;

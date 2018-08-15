@@ -22,7 +22,7 @@ class NavMenu extends React.Component {
       .toString()
       .substr(1)
       .trim();
-    if(active.indexOf("/") != -1)      
+    if(active.indexOf("/") !== -1)      
     active =  active.substr(0,active.indexOf("/"));
       
     return (

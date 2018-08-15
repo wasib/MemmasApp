@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Icon, Grid, Image, Container } from "semantic-ui-react";
+import { Header, Image } from "semantic-ui-react";
 import image from "../images/image.png";
 import { Link } from "react-router-dom";
 import "../styles/About.css";

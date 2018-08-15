@@ -47,6 +47,7 @@ export class Contact extends React.Component {
             <div className="gmap_canvas">
               <iframe
                 className='maps-responsive'
+                title='map'
                 id="gmap_canvas"
                 src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed"
                 frameBorder="0"

@@ -4,7 +4,7 @@ import "../styles/DisplayProduct.css";
 class DisplayProduct extends React.Component {
   render() {
     return (
-      <div classname="display-product">
+      <div className="display-product">
         <div className="embedded-model">
           <div className="sketchfab-embed-wrapper">
             <iframe
