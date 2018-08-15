@@ -12,55 +12,43 @@ import {Footer} from "./components/Footer";
 import {PageNotFound} from "./components/PageNotFound";
 import "./styles/App.css";
 import { withRouter } from "react-router-dom";
+import MobileNav from "./components/MobileNav";
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      visible: false
-    };
-    this.handleButtonClick = this
+     this.handleButtonClick = this
       .handleButtonClick
       .bind(this);
 
-    this.closeNavBar = this
-      .closeNavBar
-      .bind(this);
-    this.redirect = this
-      .redirect
-      .bind(this);
+      this.state = {
+        mobileNavBarVisible: false
+      }
+      
+      this.redirect = this.redirect.bind(this);
+      this.closeMobileNavBar = this.closeMobileNavBar.bind(this); 
 
-      this.homeRef = React.createRef();
-  }
+      this.child = React.createRef();
+
+    }
 
   handleButtonClick = () => {
     window.scrollTo(0, 0);
     this.setState({
-      visible: true //!this.state.visible
+      mobileNavBarVisible: true 
     });
   };
-
-  closeNavBar = () => this.setState({visible: false});
-  redirect = (target) => {
-    this.closeNavBar();
-    //window.location = "/" + target;
-    if(target==""){
-      console.log("Homelinkclciekd")
-      //document.getElementById('homeLink').click();
-      this.homeRef.current().click();
-    }
-    /*
-    this
-      .props
-      .history
-      .push("/" + target);
-      */
+ 
+  closeMobileNavBar(){
+    this.setState({
+      mobileNavBarVisible: false
+    });
   }
 
+  redirect(target){
+    this.child.current.redirect(target);
+  }
   render() {
-    console.log(this.props.history)
-    console.log("render called");
-    const {visible} = this.state;
 
     return (
       <div>
@@ -84,42 +72,8 @@ class App extends Component {
 
             </div>
 
-            <Footer/> {console.log(visible)}
-            <div
-              className="sidenav"
-              style={visible
-              ? {
-                width: '100vw'
-              }
-              : {
-                width: '0vw'
-              }}>
-              <a href="javascript:void(0)" className="closebtn" onClick={this.closeNavBar}>&times;</a>
-
-              <span onClick={() => {
-                this.redirect("")
-              }}>Home</span>
-              <span onClick={() => {
-                this.redirect("About")
-              }}>About</span>
-              <span
-                onClick={() => {
-                this.redirect("Product")
-              }}>Product</span>
-              <span
-                onClick={() => {
-                this.redirect("Services")
-              }}>Services</span>
-              <span
-                onClick={() => {
-                this.redirect("Contact")
-              }}>Contact</span>
-
-
-                        <Link class="nullible" ref={this.homeRef} to="/" >Home</Link>
-                        
-            </div>
-
+            <Footer/> 
+            <MobileNav visible={this.state.mobileNavBarVisible} ref = {this.child} closeMobileNavBar = {this.closeMobileNavBar} />
           </div>
         </Router>
       </div>
