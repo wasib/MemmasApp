@@ -20,3 +20,19 @@
 .product-individual {
   padding-bottom: 5%;
 }
+
+.product-img{
+  display:inline-block;
+  border:0;
+  position: relative;
+  transition: all 200ms ease-in;
+  transform: scale(1);   
+}
+
+.product-img:hover
+{
+    box-shadow: 9px 11.928px 13px rgba(16, 17, 17, 0.23);
+    z-index: 2;
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+}
