@@ -28,7 +28,6 @@ class App extends Component {
   }
 
   handleButtonClick = () => {
-    window.scrollTo(0, 0);
     this.setState({
       mobileNavBarVisible: true
     });
