@@ -16,8 +16,8 @@ class MobileNav extends Component {
   }
   render() {
     const visible = this.props.visible;
-    console.log("Duh");
-    console.log(visible);
+    //console.log("Duh");
+    //console.log(visible);
     let active = this
       .props
       .location
