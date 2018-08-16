@@ -18,7 +18,7 @@
 }
 
 .product-individual {
-  padding-bottom: 5%;
+  padding-bottom: 4%;
 }
 
 .product-img{
@@ -35,5 +35,8 @@
     z-index: 2;
     transition: all 200ms ease-in;
     transform: scale(1.05);
-    margin: 10px;
+}
+
+.product-text{
+  padding-top:10px;
 }
