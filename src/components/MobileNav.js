@@ -56,7 +56,7 @@ class MobileNav extends Component {
                 }
           }
         >
-          <Icon name="home" /> Home
+          <Icon name="home" />&nbsp;Home
         </span>
         <span
           onClick={() => {
@@ -73,7 +73,7 @@ class MobileNav extends Component {
                 }
           }
         >
-          <Icon name="info" /> About
+          <Icon name="info" />&nbsp;About
         </span>
         <span
           onClick={() => {
@@ -91,7 +91,7 @@ class MobileNav extends Component {
           }
         >
           {" "}
-          <Icon name="camera" /> Product
+          <Icon name="camera" />&nbsp;Product
         </span>
         <span
           onClick={() => {
@@ -108,7 +108,7 @@ class MobileNav extends Component {
                 }
           }
         >
-          <Icon name="settings" /> Services
+          <Icon name="settings" />&nbsp;Services
         </span>
         <span
           onClick={() => {
@@ -125,7 +125,7 @@ class MobileNav extends Component {
                 }
           }
         >
-          <Icon name="conversation" /> Contact
+          <Icon name="conversation" />&nbsp;Contact
         </span>
       </div>
     );

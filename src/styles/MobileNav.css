@@ -10,6 +10,9 @@
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
   }
   
   .sidenav span {
@@ -18,7 +21,7 @@
     text-decoration: none;
     font-size: 20px;
     color: #818181;
-    display: block;
+    display: inline-flex;
     transition: 0.3s;
     cursor: pointer;
     -moz-user-select: none;
