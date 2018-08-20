@@ -1,5 +1,5 @@
 import React from "react";
-import "./../styles/NavMenu.css";
+import "../styles/NavMenu.css";
 import {withRouter} from "react-router-dom";
 
 class NavMenu extends React.Component {
