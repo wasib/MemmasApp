@@ -22,7 +22,6 @@ class AppBar extends React.Component {
   }
 
   onChange = (e, data) => {
-    console.log(data.value);
     this.setState({ selected: data.value });
     this.props.history.push(
       `/${data.value}/` +

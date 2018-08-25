@@ -48,14 +48,14 @@ class ProductView extends React.Component {
     }
     this.setState({
       data: currentObject,
-      prev: "/Product/" + previousObject.id,
-      next: "/Product/" + nextObject.id
+      prev: "/en/Product/" + previousObject.id,
+      next: "/en/Product/" + nextObject.id
     });
   }
 
   render() {
     if (this.state.data === null) {
-      return <Redirect to="../Product" />;
+      return <Redirect to="../en/Product" />;
     } else {
       return (
         <div>

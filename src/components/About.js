@@ -45,7 +45,7 @@ export class About extends React.Component {
               Let us know what youre looking for in an agency. We'll take a look
               and see if this could be the start of something beautiful
             </p>
-            <Link to="/Contact">
+            <Link to="/en/Contact">
               <button className="ui button">Let's Talk</button>
             </Link>
         </div>

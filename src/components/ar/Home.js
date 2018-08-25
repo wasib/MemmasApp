@@ -21,36 +21,44 @@ export class HomeAr extends React.Component {
     return (
       <div className="home">
         <div className="home-top">
-          <div className="home-image">
-            <Image src={homeImage} size='massive' />
-          </div>
           <div className="home-top-text">
             <div className="home-header">
               <Header as="h2" icon textAlign="center">
-                <Header.Content style={{color:"white"}}>We Design and Develop Ar</Header.Content><br/>
-                <Header.Subheader style={{color:"white"}}>
-                  We are a new design studio based in USA. We have over 20 years
-                  of Combined experience, and know a thing or two about
-                  designing websites and mobile apps.
-                </Header.Subheader><br/>
-                <Link to="/Contact">
-                  <button className="ui button">CONTACT US</button>
+                <Header.Content style={{ color: "white" }}>
+                  من نحن
+                </Header.Content>
+                <br />
+                <Header.Subheader style={{ color: "white" }}>
+                  مركز التميز لأمن المعلومات بجامعة الملك سعود هو أحد المراكز
+                  الغير ربحية و التي تهدف لتطوير و تقديم الحلول الأمنية المبتكرة
+                  للارتقاء بمستوى أمن المعلومات في القطاعات الحكومية والخاصة بحد
+                  سواء داخل المملكة العربية السعودية بشكل خاص والمنطقة العربية
+                  بشكل عام وذلك بتقديم الخدمات الاستشارية لتأمين ش
+                </Header.Subheader>
+                <br />
+                <Link to="/ar/Contact">
+                  <button className="ui button">التدريب</button>
                 </Link>
               </Header>
             </div>
+          </div>
+          <div className="home-image">
+            <Image src={homeImage} size="massive" />
           </div>
         </div>
 
         <div className="about-us">
           <div className="about-text">
             <Header as="h2" icon textAlign="center">
-              <Header.Content>About Us</Header.Content>
+              <Header.Content>الخدمات</Header.Content>
               <br />
               <Header.Subheader>
-                Divide have dont man wherin air fourth. Own itself make have
-                night wont make. A you under seed appear which good give. Own
-                give air without foul moveth dry first heaven fruit dominonshed
-                wont very all.
+                ت الأكاديمية و التخصصية من أرقى الجامعات والمعاهد العالمية،
+                بالإضافة إلى تعاونه مع عدد كبير من المعاهد والمراكز البحثية
+                والتدريبية المشهورة عالمياً في مجال أمن المعلومات، وكذلك موقعه
+                القريب من جميع القطاعات المستفيدة والمستهدفة من خدماته. تأتي هذه
+                المبادرة سعياً من المركز لتحقيق أحد أهدافه الإستراتيجية بتوفير
+                كوادر مؤهلة في مجالات ذات بُعد وطني
               </Header.Subheader>
             </Header>
             <img src={signature} alt="signature" />
@@ -59,11 +67,11 @@ export class HomeAr extends React.Component {
 
         <div className="our-work-process">
           <Header as="h2" icon textAlign="center">
-            <Header.Content>Our Work Process</Header.Content>
+            <Header.Content>الاستشارية</Header.Content>
             <br />
             <Header.Subheader>
-              Was years it seasons was there form he in in them together over
-              that, third sixth gathered female creeping bearing behold years.
+              الأكاديمية و التخصصية من أرقى الجامعات والمعاهد العالمية، بالإضافة
+              إلى تعاونه مع عدد كبير من المعاهد والمراكز البحثية والتدريبية الم
             </Header.Subheader>
             <br />
           </Header>
@@ -74,9 +82,8 @@ export class HomeAr extends React.Component {
           <Carousel autoplay>
             <div>
               <h3>
-                "Outstanding job and exceeded all expectations. It was a
-                pleasure to work with them on a sizable first project and am
-                looking forward to startthe next one asap."
+                جميع القطاعات المستفيدة والمستهدفة من خدماته. تأتي هذه المبادرة
+                سعياً من المركز لتحقيق أحد أهدافه الإستراتيجية بتوفير كوادر مؤ
               </h3>
             </div>
             <div>
@@ -101,11 +108,11 @@ export class HomeAr extends React.Component {
 
         <div className="need-a-project">
           <Header as="h2" icon textAlign="center">
-            <Header.Content>Need a Project?</Header.Content>
+            <Header.Content>احصائيات</Header.Content>
             <br />
             <Header.Subheader>
-              Let us know what youre looking for in an agency. We'll take a look
-              and see if this could be the start of something beautiful
+              المؤسسات والمنظمات بمختلف مجالات عملها. ويتميز المركز باحتضانه
+              لعدد من نخبة الباحثين والاستشاريين
             </Header.Subheader>
           </Header>
           <br />

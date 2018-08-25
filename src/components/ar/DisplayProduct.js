@@ -19,7 +19,7 @@ class DisplayProduct extends React.Component {
           </div>
         </div>
         <div className="model-details">
-          Model:
+        ن نحن:
           {this.props.data.model}
           <br />
           {this.props.data.description}

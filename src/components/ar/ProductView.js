@@ -48,14 +48,14 @@ class ProductView extends React.Component {
     }
     this.setState({
       data: currentObject,
-      prev: "/Product/" + previousObject.id,
-      next: "/Product/" + nextObject.id
+      prev: "/ar/Product/" + previousObject.id,
+      next: "/ar/Product/" + nextObject.id
     });
   }
 
   render() {
     if (this.state.data === null) {
-      return <Redirect to="../Product" />;
+      return <Redirect to="../ar/Product" />;
     } else {
       return (
         <div>
@@ -64,15 +64,15 @@ class ProductView extends React.Component {
           </div>
           <div className="prev-next">
             <div className="prev">
-              <Link to={this.state.prev}><Icon name="angle left" size='large' />PREVIOUS</Link>
+              <Link to={this.state.prev}><Icon name="angle left" size='large' />سابق</Link>
             </div>
             <div className="middle">
-              <Link to='/Product'>
+              <Link to='/ar/Product'>
                 <Icon name="th large" />
               </Link>
             </div>
             <div className="next">
-              <Link to={this.state.next}>NEXT<Icon name="angle right" size='large' /></Link>
+              <Link to={this.state.next}>التالى<Icon name="angle right" size='large' /></Link>
             </div>
           </div>
         </div>

@@ -40,3 +40,23 @@
 .product-text{
   padding-top:10px;
 }
+
+.product-list-ar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding-bottom: 5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  align-content: center;
+  direction: rtl;
+}
+
+.product-list-ar > div > a > img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 4px 6.928px 8px rgba(16, 17, 17, 0.23);
+  background-color: #11153f;
+}

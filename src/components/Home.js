@@ -33,7 +33,7 @@ export class Home extends React.Component {
                   of Combined experience, and know a thing or two about
                   designing websites and mobile apps.
                 </Header.Subheader><br/>
-                <Link to="/Contact">
+                <Link to="/en/Contact">
                   <button className="ui button">CONTACT US</button>
                 </Link>
               </Header>

@@ -8,7 +8,7 @@ class ProductList extends React.Component {
   render() {
     const products = [];
     PRODUCTSINFO.forEach(product => {
-      let path = "/Product/" + product.id;
+      let path = "/en/Product/" + product.id;
       products.push(
         <div className='product-individual' key={product.id}>
           <Link to={path}>

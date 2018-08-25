@@ -11,34 +11,36 @@ export class ContactAr extends React.Component {
     return (
       <div>
         <div className="contact-gradient">
-          <h2>Contact</h2>
+          <h2>موقع المركز</h2>
         </div>
 
         <div className="middle-contact">
-          <div className="left-contact-info">
-            <h2>Contact Info:</h2>
+          <div className="right-contact-form-ar">
+            <ContactForm />
+          </div>
+          <div className="left-contact-info-ar">
+            <h2>:والمعلومات</h2>
             <p>
-              Domestic dogs inherited complex behaviors, such as bite
-              inhibition, from their wolf ancestors, which would have been pack
-              hunters with complex body language.
+              دف لتطوير و تقديم الحلول الأمنية المبتكرة للارتقاء بمستوى أمن
+              المعلومات في القطاعات الحكومية والخاصة بحد سواء داخل المملكة
+              العربية السعودية بشكل خاص والمنطقة العربية بشكل عام وذلك بتقديم
+              الخدمات الاستشارية لتأمين شبكات الحاسب الآلي و نظم المعلوما
             </p>
             <ul>
               <li>
-                <b>Address:</b> 10111 Santa Monica Boulevard, LA
+                <b>الحاسب:</b> الرياض، جامعة الملك سعود، كلية الحاسب
               </li>
               <li>
-                <b>Phone:</b> +44 987 065 908
+                <b>كلية:</b> 00966-11-4696183
               </li>
               <li>
-                <b>Email:</b> info@example.com
+                info@example.com
+                <b>:يمكنك</b>
               </li>
               <li>
-                <b>Fax:</b> +44 987 065 909
+                <b>بحد:</b> 00966-11-4696183
               </li>
             </ul>
-          </div>
-          <div className="right-contact-form">
-            <ContactForm />
           </div>
         </div>
 
@@ -46,8 +48,8 @@ export class ContactAr extends React.Component {
           <div className="mapouter">
             <div className="gmap_canvas">
               <iframe
-                className='maps-responsive'
-                title='map'
+                className="maps-responsive"
+                title="map"
                 id="gmap_canvas"
                 src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed"
                 frameBorder="0"

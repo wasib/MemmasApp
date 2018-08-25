@@ -55,6 +55,29 @@
   width:100%;
   height:100%;
 }
+
+.left-contact-info-ar {
+  max-width: 40%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: right;
+}
+
+.left-contact-info-ar > ul > li {
+  list-style: none;
+}
+
+.left-contact-info-ar > ul {
+  padding-left: 0%;
+}
+
+.right-contact-form-ar {
+  width: 60%;
+  text-align: right;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 @media only screen and (max-width: 768px) {
   .middle-contact {
     display: flex;

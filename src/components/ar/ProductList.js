@@ -8,7 +8,7 @@ class ProductList extends React.Component {
   render() {
     const products = [];
     PRODUCTSINFO.forEach(product => {
-      let path = "/Product/" + product.id;
+      let path = "/ar/Product/" + product.id;
       products.push(
         <div className='product-individual' key={product.id}>
           <Link to={path}>
@@ -16,7 +16,7 @@ class ProductList extends React.Component {
           </Link>
           <div className="product-text">
             <div className="product-model">
-              Model:
+            ن نحن:
               {product.model}
             </div>
             <div className="product-description">{product.description}</div>
@@ -24,7 +24,7 @@ class ProductList extends React.Component {
         </div>
       );
     });
-    return <div className="product-list">{products}</div>;
+    return <div className="product-list-ar">{products}</div>;
   }
 }
 

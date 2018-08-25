@@ -5,16 +5,16 @@ import '../../styles/ContactForm.css'
 class ContactForm extends React.Component {
   render() {
     return (
-      <div>
+      <div className='contact-form-ar'>
         <Form > 
           <Form.Group widths="equal">
-            <Form.Input fluid placeholder="Your Name" />
-            <Form.Input fluid placeholder="Your Email" />
+            <Form.Input fluid placeholder=" تأهيلية تخص" style={{direction: 'rtl', textAlign: 'right'}}/>
+            <Form.Input fluid placeholder=" المعلوم" />
           </Form.Group>
-          <Form.Input placeholder="Your Title" />
-          <Form.TextArea placeholder="Your Comment" />
+          <Form.Input placeholder="أهيلية تخص" />
+          <Form.TextArea placeholder="مجال أمن " />
 
-          <Form.Button color='blue'>SEND MESSAGE</Form.Button>
+          <Form.Button color='blue'>عرض المزيد</Form.Button>
         </Form>
       </div>
     );

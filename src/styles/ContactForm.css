@@ -1,0 +1,21 @@
+
+div.contact-form-ar > * > * > * > * >::-webkit-input-placeholder {
+    text-align: right;
+}
+
+
+div.contact-form-ar > * > * > * >::-webkit-input-placeholder {
+    text-align: right;
+}
+
+div.contact-form-ar > * > * >::-webkit-input-placeholder {
+    text-align: right;
+}
+
+div.contact-form-ar textarea{
+    text-align: right;
+}
+
+div.contact-form-ar .ui.form .field .ui.input input, .ui.form .fields .field .ui.input  {
+    text-align: right;
+}
