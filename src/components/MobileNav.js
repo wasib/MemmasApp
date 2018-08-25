@@ -4,15 +4,21 @@ import "./../styles/MobileNav.css";
 import { Icon } from "semantic-ui-react";
 
 class MobileNav extends Component {
-  
-  redirect(target) {
-    //alert(target);
-    this.props.history.push("/" + target);
+  constructor(props) {
+    super(props);
+    this.state = {
+      language: this.props.location.pathname
+        .toString()
+        .substr(1, 2)
+        .trim()
+    };
   }
+  redirect(target) {
+    this.props.history.push(`/${this.state.language}/` + target);
+  }
+
   render() {
     const visible = this.props.visible;
-    //console.log("Duh");
-    //console.log(visible);
     let active = this.props.location.pathname
       .toString()
       .substr(1)
@@ -44,7 +50,7 @@ class MobileNav extends Component {
         <span
           onClick={() => {
             this.props.closeMobileNavBar();
-            this.redirect("");
+            this.redirect("Home");
           }}
           style={
             active === ""
@@ -56,7 +62,8 @@ class MobileNav extends Component {
                 }
           }
         >
-          <Icon name="home" />&nbsp;Home
+          <Icon name="home" />
+          &nbsp;Home
         </span>
         <span
           onClick={() => {
@@ -73,7 +80,8 @@ class MobileNav extends Component {
                 }
           }
         >
-          <Icon name="info" />&nbsp;About
+          <Icon name="info" />
+          &nbsp;About
         </span>
         <span
           onClick={() => {
@@ -90,8 +98,8 @@ class MobileNav extends Component {
                 }
           }
         >
-          {" "}
-          <Icon name="camera" />&nbsp;Product
+          <Icon name="camera" />
+          &nbsp;Product
         </span>
         <span
           onClick={() => {
@@ -108,7 +116,8 @@ class MobileNav extends Component {
                 }
           }
         >
-          <Icon name="settings" />&nbsp;Services
+          <Icon name="settings" />
+          &nbsp;Services
         </span>
         <span
           onClick={() => {
@@ -125,7 +134,8 @@ class MobileNav extends Component {
                 }
           }
         >
-          <Icon name="conversation" />&nbsp;Contact
+          <Icon name="conversation" />
+          &nbsp;Contact
         </span>
       </div>
     );
