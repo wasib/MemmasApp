@@ -29,12 +29,9 @@ class AppBar extends React.Component {
   }
 
   onChange = (e, data) => {
-    let tflag;
-    if (data.value === "ar") tflag = "sa flag";
-    else tflag = "us flag";
     this.setState({
       selected: data.value,
-      flag: tflag
+      flag: data.value === "ar" ? "sa flag" : "us flag"
     });
     this.props.history.push(
       `/${data.value}/` +
