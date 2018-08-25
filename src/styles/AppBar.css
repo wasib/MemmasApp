@@ -49,6 +49,19 @@
   display:none;
 }
 
+.ui.fluid.dropdown{
+  padding-top:17px;
+  padding-left: 10px;
+}
+
+.ui.dropdown>.dropdown.icon{
+  margin: 0 0 0 0;
+}
+.ui.fluid.dropdown>.dropdown.icon{
+  float: none;
+}
+
+
 @media only screen and (max-width: 768px) {
   .sidebar-button{
     display: block;

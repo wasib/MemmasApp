@@ -2,7 +2,7 @@ import React from "react";
 import "./../styles/AppBar.css";
 import NavMenu from "./NavMenu";
 import { Link, withRouter } from "react-router-dom";
-import { Button, Dropdown } from "semantic-ui-react";
+import { Button, Dropdown, Icon } from "semantic-ui-react";
 import logo from "../images/logo.png";
 
 const languageOptions = [
@@ -15,14 +15,27 @@ class AppBar extends React.Component {
     super(props);
     this.state = {
       selected: this.props.location.pathname
-      .toString()
-      .substr(1,2)
-      .trim()
+        .toString()
+        .substr(1, 2)
+        .trim(),
+      flag:
+        this.props.location.pathname
+          .toString()
+          .substr(1, 2)
+          .trim() === "ar"
+          ? "sa flag"
+          : "us flag"
     };
   }
 
   onChange = (e, data) => {
-    this.setState({ selected: data.value });
+    let tflag;
+    if (data.value === "ar") tflag = "sa flag";
+    else tflag = "us flag";
+    this.setState({
+      selected: data.value,
+      flag: tflag
+    });
     this.props.history.push(
       `/${data.value}/` +
         this.props.location.pathname
@@ -32,7 +45,12 @@ class AppBar extends React.Component {
     );
   };
   render() {
-    const imgLink=`/${this.state.selected}/Home`;
+    const imgLink = `/${this.state.selected}/Home`;
+    const trigger = (
+      <span>
+        <i class={this.state.flag} />
+      </span>
+    );
     return (
       <div className="AppBar">
         <div className="LeftPane">
@@ -40,18 +58,14 @@ class AppBar extends React.Component {
             <img src={logo} alt="logo" width="120" height="50" />
           </Link>
           <Dropdown
-            button
-            className="icon"
             fluid
-            labeled
-            icon="world"
+            trigger={trigger}
             options={languageOptions}
-            value={this.state.selected}
             onChange={this.onChange}
           />
         </div>
         <div className="RightPane">
-          <NavMenu language={this.state.selected}/>
+          <NavMenu language={this.state.selected} />
         </div>
         <div className="sidebar-button">
           <Button icon="content" onClick={this.props.handleButtonClick} />
