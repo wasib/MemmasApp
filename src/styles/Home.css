@@ -5,7 +5,7 @@
   align-items: center;
   padding-left: 10%;
   padding-right: 10%;
-  background:linear-gradient(#11153f, #297bb3);
+  background: linear-gradient(#11153f, #297bb3);
   background-size: 100% 82%;
   background-repeat: no-repeat;
   padding-top: 5px;
@@ -78,28 +78,31 @@
   justify-content: center;
   margin-top: 30px;
   padding-left: 25%;
-  padding-right:25%;
+  padding-right: 25%;
   padding-top: 50px;
   padding-bottom: 50px;
   background: #f5f5f5;
 }
 
-
+div.about-text > img {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .home-image {
     display: none;
   }
-  .home-top{
-      background-size: 100% 100%;
-      padding-top:5%;
+  .home-top {
+    background-size: 100% 100%;
+    padding-top: 5%;
   }
-  .clients{
-      padding-left: 10%;
-      padding-right: 10%;
+  .clients {
+    padding-left: 10%;
+    padding-right: 10%;
   }
-  .need-a-project{
+  .need-a-project {
     padding-left: 10%;
     padding-right: 10%;
   }
