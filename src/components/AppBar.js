@@ -42,7 +42,8 @@ class AppBar extends React.Component {
     );
   };
   render() {
-    const imgLink = `/${this.state.selected}/Home`;
+    var temp = this.state.selected === "ar" ? "ar" : "en";
+    const imgLink = `/${temp}/Home`;
     const trigger = (
       <span>
         <i class={this.state.flag} />

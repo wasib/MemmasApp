@@ -12,19 +12,20 @@ class NavMenu extends React.Component {
   }
 
   handleItemClick(name) {
-    this.props.history.push(`/${this.props.language}/` + name);
+    var temp = this.props.language === "ar" ? "ar" : "en";
+    this.props.history.push(`/${temp}/` + name);
   }
 
   render() {
     let active = this.props.location.pathname
-    .toString()
-    .substr(4)
-    .trim();
+      .toString()
+      .substr(4)
+      .trim();
 
-    return this.props.language === "en" ? (
-      <NavMenuEn active={active} handleItemClick={this.handleItemClick} />
-    ) : (
+    return this.props.language === "ar" ? (
       <NavMenuAr active={active} handleItemClick={this.handleItemClick} />
+    ) : (
+      <NavMenuEn active={active} handleItemClick={this.handleItemClick} />
     );
   }
 }

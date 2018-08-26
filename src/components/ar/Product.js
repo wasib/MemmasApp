@@ -12,7 +12,7 @@ export class ProductAr extends React.Component {
         <div className="product-gradient">
           <br />
           <br />
-          <h2>Products</h2>
+          <h2>منتجات</h2>
         </div>
         <ProductList />
       </div>
