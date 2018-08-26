@@ -21,7 +21,6 @@ import { ProductAr } from "./components/ar/Product";
 import ProductViewAr from "./components/ar/ProductView";
 import { ServicesAr } from "./components/ar/Services";
 import "./styles/App.css";
-import MobileNav from "./components/MobileNav";
 
 class App extends Component {
   constructor(props) {
@@ -51,7 +50,7 @@ class App extends Component {
       <div>
         <Router>
           <div>
-            <AppBar handleButtonClick={this.handleButtonClick} />
+            <AppBar handleButtonClick={this.handleButtonClick} mobileNavBarVisible={this.state.mobileNavBarVisible} closeMobileNavBar={this.closeMobileNavBar}/>
 
             <div
               style={{
@@ -79,10 +78,7 @@ class App extends Component {
             </div>
 
             <Footer />
-            <MobileNav
-              visible={this.state.mobileNavBarVisible}
-              closeMobileNavBar={this.closeMobileNavBar}
-            />
+           
           </div>
         </Router>
       </div>

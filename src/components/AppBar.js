@@ -1,8 +1,9 @@
 import React from "react";
 import "./../styles/AppBar.css";
 import NavMenu from "./NavMenu";
+import MobileNav from "./MobileNav";
 import { Link, withRouter } from "react-router-dom";
-import { Button, Dropdown, Icon } from "semantic-ui-react";
+import { Button, Dropdown } from "semantic-ui-react";
 import logo from "../images/logo.png";
 
 const languageOptions = [
@@ -46,7 +47,7 @@ class AppBar extends React.Component {
     const imgLink = `/${temp}/Home`;
     const trigger = (
       <span>
-        <i class={this.state.flag} />
+        <i className={this.state.flag} />
       </span>
     );
     return (
@@ -68,6 +69,11 @@ class AppBar extends React.Component {
         <div className="sidebar-button">
           <Button icon="content" onClick={this.props.handleButtonClick} />
         </div>
+        <MobileNav
+          visible={this.props.mobileNavBarVisible}
+          closeMobileNavBar={this.props.closeMobileNavBar}
+          language={this.state.selected}
+        />
       </div>
     );
   }
