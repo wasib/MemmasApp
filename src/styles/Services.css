@@ -1,0 +1,15 @@
+.services-gradient {
+    background: linear-gradient(#11153f, #297bb3);
+    height: 200px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+  .services-gradient h2{
+    color: white; /*for texts inside it*/
+  }
+  

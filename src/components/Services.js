@@ -1,4 +1,6 @@
 import React from "react";
+import "../styles/Services.css"
+import ContactForm from "./ContactForm";
 
 export class Services extends React.Component {
   componentDidMount(){
@@ -6,17 +8,11 @@ export class Services extends React.Component {
   }
   render() {
     return (
-    <div style={{overflow:'hidden', height:'1000px'}}>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <hr />
-      <h1 style={{textAlign:'center'}}>Services</h1>
-      <hr />
-      <h3 style={{textAlign:'center'}}>This page is yet to be done!</h3>
+    <div>
+      <div className="services-gradient">
+          <h2>Services</h2>
+        </div>
+        <ContactForm/>
     </div>
   );
 }
