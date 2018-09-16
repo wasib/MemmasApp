@@ -1,15 +1,51 @@
+.services-page {
+  background: #f5f5f5;
+}
+
 .services-gradient {
-    background: linear-gradient(#11153f, #297bb3);
-    height: 200px;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  
-  .services-gradient h2{
-    color: white; /*for texts inside it*/
-  }
-  
+  background: linear-gradient(#11153f, #297bb3);
+  height: 200px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.services-gradient h2 {
+  color: white; /*for texts inside it*/
+}
+
+.services-icon-single {
+  width: 320px;
+  height: 203px;
+  border-radius: 10px;
+  box-shadow: 4px 6.928px 8px rgba(16, 17, 17, 0.06);
+  background-color: #ffffff;
+}
+
+.services-icon-single:hover {
+  cursor: pointer;
+  background-color: #297bb3;
+  color: #ffffff;
+}
+
+.services-icon-image {
+  width: 200px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.services-icon-image > .services-img {
+  max-width: 100%;
+  max-height: 100%;
+  color: #11153f;
+
+  margin-top: 20px;
+  margin-bottom: auto;
+}
+
+.services-icon-text {
+  text-align: center;
+}
