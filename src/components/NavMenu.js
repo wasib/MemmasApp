@@ -10,7 +10,7 @@ class NavMenu extends React.Component {
 
     this.handleItemClick = this.handleItemClick.bind(this);
   }
-
+ 
   handleItemClick(name) {
     var temp = this.props.language === "ar" ? "ar" : "en";
     this.props.history.push(`/${temp}/` + name);

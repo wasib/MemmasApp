@@ -23,6 +23,7 @@
   border-radius: 10px;
   box-shadow: 4px 6.928px 8px rgba(16, 17, 17, 0.06);
   background-color: #ffffff;
+  margin: 20px 10px;
 }
 
 .services-icon-single:hover {
@@ -37,6 +38,11 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.services-icon-text{
+  margin-top:40px;
+}
+
 .services-icon-image > .services-img {
   max-width: 100%;
   max-height: 100%;
@@ -48,4 +54,48 @@
 
 .services-icon-text {
   text-align: center;
+}
+
+
+.services-container{
+  padding:45px 20% 100px 20%;
+
+  
+}
+
+.services-icons{
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.services-top-text{
+  padding: 20px 25%;
+  text-align: center;
+}
+
+.services-contact-form{
+
+  padding: 0 10%;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .services-contact-form{
+
+    padding: 0 0;
+  }
+
+  .services-top-text{
+    padding: 20px 15%;
+    text-align: center;
+  }
+
+  .services-container{
+    padding:45px 10% 100px 10%;
+  
+    
+  }
+
 }
