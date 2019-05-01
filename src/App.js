@@ -50,7 +50,11 @@ class App extends Component {
       <div>
         <Router>
           <div>
-            <AppBar handleButtonClick={this.handleButtonClick} mobileNavBarVisible={this.state.mobileNavBarVisible} closeMobileNavBar={this.closeMobileNavBar}/>
+            <AppBar
+              handleButtonClick={this.handleButtonClick}
+              mobileNavBarVisible={this.state.mobileNavBarVisible}
+              closeMobileNavBar={this.closeMobileNavBar}
+            />
 
             <div
               style={{
@@ -58,7 +62,11 @@ class App extends Component {
               }}
             >
               <Switch>
-              <Route exact path="/" component={() => window.location='/en/Home'}/>
+                <Route
+                  exact
+                  path="/"
+                  component={() => (window.location = "/en/Home")}
+                />
                 <Redirect exact from="/en" to="/en/Home" />
                 <Redirect exact from="/ar" to="/ar/Home" />
                 <Route path="/en/Home" component={Home} />
@@ -78,7 +86,6 @@ class App extends Component {
             </div>
 
             <Footer />
-           
           </div>
         </Router>
       </div>
