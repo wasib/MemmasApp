@@ -1,6 +1,6 @@
 import React from "react";
 import { Header, Image } from "semantic-ui-react";
-import image from "../../images/image.png";
+import image from "../../images/about.jpg";
 import { Link } from "react-router-dom";
 import "../../styles/About.css";
 
@@ -43,7 +43,7 @@ export class AboutAr extends React.Component {
           </div>
         </div>
 
-        <div className="need-a-project-2">
+        {/* <div className="need-a-project-2">
           <h2>شبكات ال</h2>
           <p>
             بتقديم الخدمات الاستشارية لتأمين شبكات الحاسب الآلي و نظم المعلومات
@@ -53,7 +53,7 @@ export class AboutAr extends React.Component {
           <Link to="/ar/Contact">
             <button className="ui button">شبكات ال</button>
           </Link>
-        </div>
+        </div> */}
       </div>
     );
   }

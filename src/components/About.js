@@ -1,6 +1,6 @@
 import React from "react";
 import { Header, Image } from "semantic-ui-react";
-import image from "../images/image.png";
+import image from "../images/about.jpg";
 import { Link } from "react-router-dom";
 import "../styles/About.css";
 
@@ -39,7 +39,7 @@ export class About extends React.Component {
           </div>
         </div>
 
-        <div className="need-a-project-2">
+        {/* <div className="need-a-project-2">
             <h2>Need a Project?</h2>
             <p>
               Let us know what youre looking for in an agency. We'll take a look
@@ -48,7 +48,7 @@ export class About extends React.Component {
             <Link to="/en/Contact">
               <button className="ui button">Let's Talk</button>
             </Link>
-        </div>
+        </div> */}
       </div>
     );
   }
