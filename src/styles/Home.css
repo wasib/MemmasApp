@@ -49,6 +49,10 @@
   margin-top: 30px;
 }
 
+.clients > img {
+  max-height: 72px;
+}
+
 .about-us {
   display: flex;
   text-align: center;
@@ -87,6 +91,11 @@
 div.about-text > img {
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+video {
+  width: 100% !important;
+  height: auto !important;
 }
 
 @media only screen and (max-width: 768px) {

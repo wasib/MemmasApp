@@ -2,11 +2,13 @@ import React from "react";
 import homeImage from "../images/homeImage.svg";
 import image from "../images/image.png";
 import signature from "../images/signature.svg";
-import client1 from "../images/client1.svg";
-import client2 from "../images/client2.svg";
-import client3 from "../images/client3.svg";
-import client4 from "../images/client4.svg";
-import client5 from "../images/client5.svg";
+import client1 from "../images/home/1.png";
+import client2 from "../images/home/2.png";
+import client3 from "../images/home/3.png";
+import client4 from "../images/home/5.png";
+import client5 from "../images/home/6.png";
+import client6 from "../images/home/7.png";
+import client7 from "../images/home/8.png";
 import { Header, Embed, Image } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import { Carousel } from "antd";
@@ -22,17 +24,21 @@ export class Home extends React.Component {
       <div className="home">
         <div className="home-top">
           <div className="home-image">
-            <Image src={homeImage} size='massive' />
+            <Image src={homeImage} size="massive" />
           </div>
           <div className="home-top-text">
             <div className="home-header">
               <Header as="h2" icon textAlign="center">
-                <Header.Content style={{color:"white"}}>We Design and Develop</Header.Content><br/>
-                <Header.Subheader style={{color:"white"}}>
+                <Header.Content style={{ color: "white" }}>
+                  We Design and Develop
+                </Header.Content>
+                <br />
+                <Header.Subheader style={{ color: "white" }}>
                   We are a new design studio based in USA. We have over 20 years
                   of Combined experience, and know a thing or two about
                   designing websites and mobile apps.
-                </Header.Subheader><br/>
+                </Header.Subheader>
+                <br />
                 <Link to="/en/Contact">
                   <button className="ui button">CONTACT US</button>
                 </Link>
@@ -67,7 +73,12 @@ export class Home extends React.Component {
             </Header.Subheader>
             <br />
           </Header>
-          <Embed id="kJQP7kiw5Fk" placeholder={image} source="youtube" />
+          <video controls>
+            <source
+              src={require("../images/home/homepage_video.mp4")}
+              type="video/mp4"
+            />
+          </video>
         </div>
 
         <div className="carousel">
@@ -97,6 +108,8 @@ export class Home extends React.Component {
           <img src={client3} alt="client3" />
           <img src={client4} alt="client4" />
           <img src={client5} alt="client5" />
+          <img src={client6} alt="client6" />
+          <img src={client7} alt="client7" />
         </div>
 
         <div className="need-a-project">
