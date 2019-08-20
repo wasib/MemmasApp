@@ -8,20 +8,20 @@ export const Footer = () => {
     <div className="footer-flexbox">
       <div className="footer-image">
         {" "}
-        <img  src={logo} alt="logo" />
+        <img src={logo} alt="logo" />
       </div>
 
       <List>
         <List.Item>
-          <List.Content id="name">SawApps, Inc.</List.Content>
+          <List.Content id="name">Middle East Mechatronics</List.Content>
         </List.Item>
         <br />
         <List.Item>
           <List.Icon name="copyright outline" />
-          <List.Content>2018 SawApps. All rights reserved.</List.Content>
+          <List.Content>2019 Middle East Mechatronics (R)(TM).</List.Content>
         </List.Item>
         <List.Item>
-          <List.Content>Designed by SawApps</List.Content>
+          <List.Content>All rights reserved.</List.Content>
         </List.Item>
       </List>
 
@@ -34,7 +34,7 @@ export const Footer = () => {
         </List.Item>
         <List.Item>
           <List.Icon name="phone" />
-          <List.Content>+44 987 065 908</List.Content>
+          <List.Content>+966 9200 12804</List.Content>
         </List.Item>
       </List>
 
@@ -42,7 +42,9 @@ export const Footer = () => {
         <List.Item>
           <List.Icon name="facebook f" />
           <List.Content>
-            <a href="http://www.facebook.com">Facebook</a>
+            <a href="https://www.facebook.com/memmasolutions/?ref=br_rs">
+              Facebook
+            </a>
           </List.Content>
         </List.Item>
         <List.Item>
@@ -63,7 +65,9 @@ export const Footer = () => {
         <List.Item>
           <List.Icon name="youtube" />
           <List.Content>
-            <a href="http://www.youtube.com">Youtube</a>
+            <a href="https://www.youtube.com/channel/UCSosKn9XHnp8CEFGvBAw4ug">
+              Youtube
+            </a>
           </List.Content>
         </List.Item>
       </List>

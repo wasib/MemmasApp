@@ -11,6 +11,11 @@ export class ServicesAr extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
+
+  handleClick = () => {
+    window.scrollTo(0, document.body.scrollHeight);
+  };
+
   render() {
     return (
       <div className="services-page">
@@ -24,33 +29,21 @@ export class ServicesAr extends React.Component {
             الحكومية والخاصة بحد سواء داخل المملكة العربية السعودية بشك
           </div>
           <div className="services-icons">
-            <div className="services-icon-single">
+            <div className="services-icon-single" onClick={this.handleClick}>
               <div className="services-icon-image">
                 <img src={img1} alt="services-img" className="services-img" />
               </div>
               <div className="services-icon-text">صورة</div>
             </div>
-            <div className="services-icon-single">
+            <div className="services-icon-single" onClick={this.handleClick}>
               <div className="services-icon-image">
                 <img src={img2} alt="services-img" className="services-img" />
               </div>
               <div className="services-icon-text">صورة</div>
             </div>
-            <div className="services-icon-single">
+            <div className="services-icon-single" onClick={this.handleClick}>
               <div className="services-icon-image">
                 <img src={img3} alt="services-img" className="services-img" />
-              </div>
-              <div className="services-icon-text">صورة</div>
-            </div>
-            <div className="services-icon-single">
-              <div className="services-icon-image">
-                <img src={img4} alt="services-img" className="services-img" />
-              </div>
-              <div className="services-icon-text">صورة</div>
-            </div>
-            <div className="services-icon-single">
-              <div className="services-icon-image">
-                <img src={img5} alt="services-img" className="services-img" />
               </div>
               <div className="services-icon-text">صورة</div>
             </div>
