@@ -1,11 +1,9 @@
 import React from "react";
 import "../../styles/Services.css";
-import ContactForm from "./ContactForm";
-import img1 from "../../images/services icon 1.svg";
-import img2 from "../../images/services icon 2.svg";
-import img3 from "../../images/services icon 3.svg";
-import img4 from "../../images/services icon 4.svg";
-import img5 from "../../images/services icon 5.svg";
+import ServicesForm from "./ServicesForm";
+import img1 from "../../images/services/services img 1.png";
+import img2 from "../../images/services/services img 2.png";
+import img3 from "../../images/services/services img 3.png";
 
 export class ServicesAr extends React.Component {
   componentDidMount() {
@@ -33,23 +31,23 @@ export class ServicesAr extends React.Component {
               <div className="services-icon-image">
                 <img src={img1} alt="services-img" className="services-img" />
               </div>
-              <div className="services-icon-text">صورة</div>
+              <div className="services-icon-text">طلب رفع مساحة موقع</div>
             </div>
             <div className="services-icon-single" onClick={this.handleClick}>
               <div className="services-icon-image">
                 <img src={img2} alt="services-img" className="services-img" />
               </div>
-              <div className="services-icon-text">صورة</div>
+              <div className="services-icon-text">طلب عرض سعر</div>
             </div>
             <div className="services-icon-single" onClick={this.handleClick}>
               <div className="services-icon-image">
                 <img src={img3} alt="services-img" className="services-img" />
               </div>
-              <div className="services-icon-text">صورة</div>
+              <div className="services-icon-text">طلب استشارات </div>
             </div>
           </div>
           <div className="services-contact-form">
-            <ContactForm />
+            <ServicesForm />
           </div>
         </div>
       </div>

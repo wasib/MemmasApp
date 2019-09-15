@@ -14,14 +14,14 @@ export class About extends React.Component {
         <div className="about-gradient">
           <Header as="h2" textAlign="center">
             <Header.Content style={{ color: "white" }}>About Us</Header.Content>
-            <Header.Subheader style={{ color: "white" }}>
+            {/* <Header.Subheader style={{ color: "white" }}>
               <br />
               Middle East Mechatronics Factory for Machinery and Equipment,
               established in 2016 and it is the first factory in the KSA which
               is specialized in the automation field and specifically producing
               automatic car wash machines with providing reliable warranties and
               after-services for the products nationwide and worldwide.
-            </Header.Subheader>
+            </Header.Subheader> */}
           </Header>
         </div>
 
@@ -30,15 +30,13 @@ export class About extends React.Component {
             <Image src={image} />
           </div>
           <div className="about-us-text">
-            <h2>About Me</h2>
+            <h2>About Us</h2>
             <p>
-              Domestic dogs inherited complex behaviors, such as bite
-              inhibition, from their wolf ancestors, which would have been pack
-              hunters with complex body language.
-            </p>
-            <p>
-              "man's best friend" in the Western world. In some cultures,
-              however, dogs are also a source of meat.
+              Middle East Mechatronics Factory for Machinery and Equipment,
+              established in 2016 and it is the first factory in the KSA which
+              is specialized in the automation field and specifically producing
+              automatic car wash machines with providing reliable warranties and
+              after-services for the products nationwide and worldwide.
             </p>
           </div>
         </div>

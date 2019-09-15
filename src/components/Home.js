@@ -116,14 +116,14 @@ export class Home extends React.Component {
         </div>
 
         <div className="need-a-project">
-          <Header as="h2" icon textAlign="center">
-            <Header.Content>Need a Project?</Header.Content>
+          {/* <Header as="h2" icon textAlign="center">
+            <Header.Content>Contact Us</Header.Content>
             <br />
             <Header.Subheader>
               Let us know what youre looking for in an agency. We'll take a look
               and see if this could be the start of something beautiful
             </Header.Subheader>
-          </Header>
+          </Header> */}
           <br />
           <ContactForm />
         </div>

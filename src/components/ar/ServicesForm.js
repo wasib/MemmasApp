@@ -2,12 +2,12 @@ import React from "react";
 import { Form } from "semantic-ui-react";
 import "../../styles/ContactForm.css";
 
-class ContactForm extends React.Component {
+export default class ServicesForm extends React.Component {
   render() {
     return (
       <div className="contact-form-ar">
         <Form style={{ "text-align": "right" }}>
-          <h2>تواصل معنا</h2>
+          <h2>طلب خدمة جديدة</h2>
           <Form.Group widths="equal">
             <Form.Input
               fluid
@@ -17,6 +17,7 @@ class ContactForm extends React.Component {
             <Form.Input fluid placeholder=" المعلوم" />
           </Form.Group>
           <Form.Input placeholder="أهيلية تخص" />
+          <Form.Input placeholder="رقم التواصل" />
           <Form.TextArea placeholder="مجال أمن " />
 
           <Form.Button color="blue">عرض المزيد</Form.Button>
@@ -25,5 +26,3 @@ class ContactForm extends React.Component {
     );
   }
 }
-
-export default ContactForm;

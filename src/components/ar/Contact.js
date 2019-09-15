@@ -19,26 +19,22 @@ export class ContactAr extends React.Component {
             <ContactForm />
           </div>
           <div className="left-contact-info-ar">
-            <h2>:والمعلومات</h2>
+            <h2>عنوان المصنع:</h2>
             <p>
-              دف لتطوير و تقديم الحلول الأمنية المبتكرة للارتقاء بمستوى أمن
-              المعلومات في القطاعات الحكومية والخاصة بحد سواء داخل المملكة
-              العربية السعودية بشكل خاص والمنطقة العربية بشكل عام وذلك بتقديم
-              الخدمات الاستشارية لتأمين شبكات الحاسب الآلي و نظم المعلوما
+              مصنع الشرق الأوسط المتقدم للصناعة  2308 شارع الملك فيصل، حي
+              الضاحية (الخمرة)، جدة 22529، المملكة العربية السعودية
             </p>
             <ul>
+              <li>اوقات الدوام من السبت الى الخميس 8ص - 5م</li>
               <li>
-                <b>الحاسب:</b> الرياض، جامعة الملك سعود، كلية الحاسب
+                <b>الرقم الموحد:</b> 00966920012804
               </li>
               <li>
-                <b>كلية:</b> 00966-11-4696183
+                00966122881787
+                <b>تليفاكس:</b>
               </li>
               <li>
-                info@example.com
-                <b>:يمكنك</b>
-              </li>
-              <li>
-                <b>بحد:</b> 00966-11-4696183
+                <b>جوال مبيعات:</b> 00966550954055
               </li>
             </ul>
           </div>
@@ -51,7 +47,7 @@ export class ContactAr extends React.Component {
                 className="maps-responsive"
                 title="map"
                 id="gmap_canvas"
-                src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=2308%20King%20Faisal%20Rd%2C%20Ad%20Dahiah%20district%D8%8C%20Jeddah%2022529%2C%20Saudi%20Arabia&t=&z=16&ie=UTF8&iwloc=&output=embed"
                 frameBorder="0"
                 scrolling="no"
                 marginHeight="0"

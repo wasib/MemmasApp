@@ -58,12 +58,12 @@ export class HomeAr extends React.Component {
               <Header.Content>الخدمات</Header.Content>
               <br />
               <Header.Subheader>
-              توفير الاستشارات في مجال مراكز غسيل السيارات الاتوماتيكية وتشمل استشارات دراسة الجدوى، التصاميم، التجهيزات ،التطوير.
-
+                توفير الاستشارات في مجال مراكز غسيل السيارات الاتوماتيكية وتشمل
+                استشارات دراسة الجدوى، التصاميم، التجهيزات ،التطوير.
               </Header.Subheader>
               <Header.Subheader>
-              توفير الاستشارات في مجالات الاتمتة ويشمل ذلك التصاميم والتجهيزات والتطوير.
-
+                توفير الاستشارات في مجالات الاتمتة ويشمل ذلك التصاميم والتجهيزات
+                والتطوير.
               </Header.Subheader>
             </Header>
             {/* <img src={signature} alt="signature" /> */}
@@ -119,14 +119,14 @@ export class HomeAr extends React.Component {
         </div>
 
         <div className="need-a-project">
-          <Header as="h2" icon textAlign="center">
+          {/* <Header as="h2" icon textAlign="center">
             <Header.Content>احصائيات</Header.Content>
             <br />
             <Header.Subheader>
               المؤسسات والمنظمات بمختلف مجالات عملها. ويتميز المركز باحتضانه
               لعدد من نخبة الباحثين والاستشاريين
             </Header.Subheader>
-          </Header>
+          </Header> */}
           <br />
           <ContactForm />
         </div>
