@@ -1,7 +1,7 @@
 .home-top {
   display: inline-flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding-left: 10%;
   padding-right: 10%;
@@ -23,7 +23,9 @@
   text-align: center;
   padding-left: 10%;
   padding-right: 10%;
+  max-width:80vw;
 }
+
 
 .ant-carousel .slick-slide {
   text-align: center;

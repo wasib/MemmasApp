@@ -12,7 +12,7 @@ import { About } from "./components/About";
 import { Product } from "./components/Product";
 import ProductView from "./components/ProductView";
 import { Services } from "./components/Services";
-import { Footer } from "./components/Footer";
+import Footer from "./components/Footer";
 import { PageNotFound } from "./components/PageNotFound";
 import { HomeAr } from "./components/ar/Home";
 import { ContactAr } from "./components/ar/Contact";

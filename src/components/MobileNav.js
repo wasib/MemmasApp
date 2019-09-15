@@ -53,9 +53,8 @@ class MobileNav extends Component {
                 }
           }
         >
-          <Icon name="home" />&nbsp;{this.props.language === "ar"
-            ? 'الصفحة'
-            : 'Home'}
+          <Icon name="home" />
+          &nbsp;{this.props.language === "ar" ? "الصفحة" : "HOME"}
         </span>
         <span
           onClick={() => {
@@ -72,9 +71,8 @@ class MobileNav extends Component {
                 }
           }
         >
-          <Icon name="info" />&nbsp;{this.props.language === "ar"
-            ? 'حول'
-            : 'About'}
+          <Icon name="info" />
+          &nbsp;{this.props.language === "ar" ? "من نحن" : "ABOUT"}
         </span>
         <span
           onClick={() => {
@@ -91,9 +89,8 @@ class MobileNav extends Component {
                 }
           }
         >
-          <Icon name="camera" />&nbsp;{this.props.language === "ar"
-            ? 'المنتج'
-            : 'Product'}
+          <Icon name="camera" />
+          &nbsp;{this.props.language === "ar" ? "المنتجات" : "PRODUCT"}
         </span>
         <span
           onClick={() => {
@@ -110,9 +107,8 @@ class MobileNav extends Component {
                 }
           }
         >
-          <Icon name="settings" />&nbsp;{this.props.language === "ar"
-            ? 'خدمات'
-            : 'Services'}
+          <Icon name="settings" />
+          &nbsp;{this.props.language === "ar" ? "خدمات" : "SERVICES"}
         </span>
         <span
           onClick={() => {
@@ -129,9 +125,8 @@ class MobileNav extends Component {
                 }
           }
         >
-          <Icon name="conversation" />&nbsp;{this.props.language === "ar"
-            ? 'اتصل'
-            : 'Contact'}
+          <Icon name="conversation" />
+          &nbsp;{this.props.language === "ar" ? "اتصل بنا" : "CONTACT"}
         </span>
       </div>
     );

@@ -30,18 +30,21 @@ export class Home extends React.Component {
             <div className="home-header">
               <Header as="h2" icon textAlign="center">
                 <Header.Content style={{ color: "white" }}>
-                  We Design and Develop
+                  About Us
                 </Header.Content>
                 <br />
                 <Header.Subheader style={{ color: "white" }}>
-                  We are a new design studio based in USA. We have over 20 years
-                  of Combined experience, and know a thing or two about
-                  designing websites and mobile apps.
+                  Middle East Mechatronics Factory for Machinery and Equipment,
+                  established in 2016 and it is the first factory in the KSA
+                  which is specialized in the automation field and specifically
+                  producing automatic car wash machines with providing reliable
+                  warranties and after-services for the products nationwide and
+                  worldwide.
                 </Header.Subheader>
                 <br />
-                <Link to="/en/Contact">
+                {/* <Link to="/en/Contact">
                   <button className="ui button">CONTACT US</button>
-                </Link>
+                </Link> */}
               </Header>
             </div>
           </div>
@@ -50,21 +53,21 @@ export class Home extends React.Component {
         <div className="about-us">
           <div className="about-text">
             <Header as="h2" icon textAlign="center">
-              <Header.Content>About Us</Header.Content>
+              <Header.Content>Our Services</Header.Content>
               <br />
               <Header.Subheader>
-                Divide have dont man wherin air fourth. Own itself make have
-                night wont make. A you under seed appear which good give. Own
-                give air without foul moveth dry first heaven fruit dominonshed
-                wont very all.
+              Providing professional consultations in automatic car wash machines field and our services include providing designs, case studies, site preparation, equipment installation, and maintenance.
+              </Header.Subheader>
+              <Header.Subheader>
+              Providing professional consultations in the automation filed and that includes designing, fabricating, programming and maintaining the projects.
               </Header.Subheader>
             </Header>
-            <img src={signature} alt="signature" />
+            {/* <img src={signature} alt="signature" /> */}
           </div>
         </div>
 
         <div className="our-work-process">
-          <Header as="h2" icon textAlign="center">
+          {/* <Header as="h2" icon textAlign="center">
             <Header.Content>Our Work Process</Header.Content>
             <br />
             <Header.Subheader>
@@ -72,7 +75,7 @@ export class Home extends React.Component {
               that, third sixth gathered female creeping bearing behold years.
             </Header.Subheader>
             <br />
-          </Header>
+          </Header> */}
           <video controls>
             <source
               src={require("../images/home/homepage_video.mp4")}
@@ -81,7 +84,7 @@ export class Home extends React.Component {
           </video>
         </div>
 
-        <div className="carousel">
+        {/* <div className="carousel">
           <Carousel autoplay>
             <div>
               <h3>
@@ -100,7 +103,7 @@ export class Home extends React.Component {
               <h3>4</h3>
             </div>
           </Carousel>
-        </div>
+        </div> */}
 
         <div className="clients">
           <img src={client1} alt="client1" />

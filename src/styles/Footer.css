@@ -12,6 +12,10 @@
   padding-right:5%;
 }
 
+.footer-flexbox.arabic{
+  flex-direction: row-reverse;
+}
+
 .footer-flexbox a {
   color: #9b9ba1;
 }

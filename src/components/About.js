@@ -15,8 +15,12 @@ export class About extends React.Component {
           <Header as="h2" textAlign="center">
             <Header.Content style={{ color: "white" }}>About Us</Header.Content>
             <Header.Subheader style={{ color: "white" }}>
-              <br />I am a Graphic and Web Designer based in New York,
-              specializing in User Interface Design and Development.
+              <br />
+              Middle East Mechatronics Factory for Machinery and Equipment,
+              established in 2016 and it is the first factory in the KSA which
+              is specialized in the automation field and specifically producing
+              automatic car wash machines with providing reliable warranties and
+              after-services for the products nationwide and worldwide.
             </Header.Subheader>
           </Header>
         </div>

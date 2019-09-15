@@ -51,7 +51,7 @@ class AppBar extends React.Component {
       </span>
     );
     return (
-      <div className="AppBar">
+      <div className={`AppBar ${temp == "ar" ? "arabic" : ""}`}>
         <div className="LeftPane">
           <Link to={imgLink}>
             <img src={logo} alt="logo" width="120" height="50" />

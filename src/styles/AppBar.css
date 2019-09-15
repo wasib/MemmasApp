@@ -1,7 +1,6 @@
-.AppBar
-{
+.AppBar {
   display: flex;
-  width:100%;
+  width: 100%;
   transition: height 0.3s ease-out;
   position: fixed;
   top: 0;
@@ -11,66 +10,70 @@
   align-items: center;
 }
 
-.LeftPane
-{
+.AppBar.arabic {
+  flex-direction: row-reverse;
+}
+
+.AppBar.arabic .LeftPane {
+  flex-direction: row-reverse;
+  margin-right: 5%;
+  margin-left: auto;
+}
+
+.LeftPane {
   height: 100%;
   float: left;
   display: flex;
   flex-direction: row;
   align-content: flex-start;
   margin-right: auto;
-  margin-left:5%;
- 
+  margin-left: 5%;
 }
 
-.LeftPane img{
+.LeftPane img {
   cursor: pointer;
   margin: 5px;
 }
 
-
-.RightPane
-{
+.RightPane {
   height: 100%;
-  width:40%;
+  width: 40%;
   margin-right: 5%;
 }
 
-.Title
-{
-  line-height: 60px; /*10vh;*/ 
-  width: auto; 
+.Title {
+  line-height: 60px; /*10vh;*/
+  width: auto;
   color: white;
   cursor: pointer;
   word-wrap: break-word;
 }
 
-.sidebar-button{
-  display:none;
+.sidebar-button {
+  display: none;
 }
 
-.ui.fluid.dropdown{
-  padding-top:17px;
+.ui.fluid.dropdown {
+  padding-top: 17px;
   padding-left: 10px;
 }
 
-.ui.dropdown>.dropdown.icon{
+.ui.dropdown > .dropdown.icon {
   margin: 0 0 0 0;
 }
-.ui.fluid.dropdown>.dropdown.icon{
+.ui.fluid.dropdown > .dropdown.icon {
   float: none;
 }
 
-
 @media only screen and (max-width: 768px) {
-  .sidebar-button{
+  .sidebar-button {
     display: block;
   }
-  .RightPane{
+  .RightPane {
     display: none;
   }
 
-  .sidebar-button i{
-    color:black;
+  .sidebar-button i {
+    color: black;
   }
 }

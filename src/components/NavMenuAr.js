@@ -19,7 +19,7 @@ export class NavMenuAr extends React.Component {
                 }
           }
         >
-          اتصل
+          اتصل بنا
         </button>
         <button
           className="btn btn-hover-3 link-1"
@@ -53,7 +53,7 @@ export class NavMenuAr extends React.Component {
                 }
           }
         >
-          المنتج
+          المنتجات
         </button>
         <button
           className="btn btn-hover-3 link-1"
@@ -70,7 +70,7 @@ export class NavMenuAr extends React.Component {
                 }
           }
         >
-          حول
+          من نحن
         </button>
         <button
           className="btn btn-hover-3 link-1"

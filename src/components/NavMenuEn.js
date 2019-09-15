@@ -19,7 +19,7 @@ export class NavMenuEn extends React.Component{
                 }
           }
         >
-          Home
+          HOME
         </button>
         <button
           className="btn btn-hover-3 link-1"
@@ -36,7 +36,7 @@ export class NavMenuEn extends React.Component{
                 }
           }
         >
-          About
+          ABOUT
         </button>
         <button
           className="btn btn-hover-3 link-1"
@@ -53,7 +53,7 @@ export class NavMenuEn extends React.Component{
                 }
           }
         >
-          Product
+          PRODUCT
         </button>
         <button
           className="btn btn-hover-3 link-1"
@@ -70,7 +70,7 @@ export class NavMenuEn extends React.Component{
                 }
           }
         >
-          Services
+          SERVICES
         </button>
         <button
           className="btn btn-hover-3 link-1"
@@ -87,7 +87,7 @@ export class NavMenuEn extends React.Component{
                 }
           }
         >
-          Contact
+          CONTACT
         </button>
       </div>
         )

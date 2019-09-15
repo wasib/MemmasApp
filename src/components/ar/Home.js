@@ -31,16 +31,19 @@ export class HomeAr extends React.Component {
                 </Header.Content>
                 <br />
                 <Header.Subheader style={{ color: "white" }}>
-                  مركز التميز لأمن المعلومات بجامعة الملك سعود هو أحد المراكز
-                  الغير ربحية و التي تهدف لتطوير و تقديم الحلول الأمنية المبتكرة
-                  للارتقاء بمستوى أمن المعلومات في القطاعات الحكومية والخاصة بحد
-                  سواء داخل المملكة العربية السعودية بشكل خاص والمنطقة العربية
-                  بشكل عام وذلك بتقديم الخدمات الاستشارية لتأمين ش
+                  مصنع الشرق الأوسط الحديث للآلآت والمعدات، تم تأسيسه في عام
+                  ٢٠١٦ وهو اول مصنع في المملكة العربية السعودية مختص بتصميم
+                  وإنتاج الاجهزة والمعدات الأوتوماتيكية والتي تقلل العماله في
+                  شتى المجالات.اهم المنتجات التي يعمل عليها المصنع هي منتجات
+                  غسيل السيارات الأوتوماتيكية فائقة السرعة والتي تصل إنتاجيها
+                  حتى ٤٠ سيارة في الساعة. ويتميز المصنع محلياً بتوفير الضمانات
+                  والصيانات الدورية للاجهزة في كافة أنحاء مناطق المملكة والعالم
+                  وبشكل موثوق ومعتمد.  والخاصة بحد سوا
                 </Header.Subheader>
                 <br />
-                <Link to="/ar/Contact">
+                {/* <Link to="/ar/Contact">
                   <button className="ui button">التدريب</button>
-                </Link>
+                </Link> */}
               </Header>
             </div>
           </div>
@@ -55,20 +58,20 @@ export class HomeAr extends React.Component {
               <Header.Content>الخدمات</Header.Content>
               <br />
               <Header.Subheader>
-                ت الأكاديمية و التخصصية من أرقى الجامعات والمعاهد العالمية،
-                بالإضافة إلى تعاونه مع عدد كبير من المعاهد والمراكز البحثية
-                والتدريبية المشهورة عالمياً في مجال أمن المعلومات، وكذلك موقعه
-                القريب من جميع القطاعات المستفيدة والمستهدفة من خدماته. تأتي هذه
-                المبادرة سعياً من المركز لتحقيق أحد أهدافه الإستراتيجية بتوفير
-                كوادر مؤهلة في مجالات ذات بُعد وطني
+              توفير الاستشارات في مجال مراكز غسيل السيارات الاتوماتيكية وتشمل استشارات دراسة الجدوى، التصاميم، التجهيزات ،التطوير.
+
+              </Header.Subheader>
+              <Header.Subheader>
+              توفير الاستشارات في مجالات الاتمتة ويشمل ذلك التصاميم والتجهيزات والتطوير.
+
               </Header.Subheader>
             </Header>
-            <img src={signature} alt="signature" />
+            {/* <img src={signature} alt="signature" /> */}
           </div>
         </div>
 
         <div className="our-work-process">
-          <Header as="h2" icon textAlign="center">
+          {/* <Header as="h2" icon textAlign="center">
             <Header.Content>الاستشارية</Header.Content>
             <br />
             <Header.Subheader>
@@ -76,7 +79,7 @@ export class HomeAr extends React.Component {
               إلى تعاونه مع عدد كبير من المعاهد والمراكز البحثية والتدريبية الم
             </Header.Subheader>
             <br />
-          </Header>
+          </Header> */}
           <video controls>
             <source
               src={require("../../images/home/homepage_video.mp4")}
@@ -85,7 +88,7 @@ export class HomeAr extends React.Component {
           </video>
         </div>
 
-        <div className="carousel">
+        {/* <div className="carousel">
           <Carousel autoplay>
             <div>
               <h3>
@@ -103,7 +106,7 @@ export class HomeAr extends React.Component {
               <h3>4</h3>
             </div>
           </Carousel>
-        </div>
+        </div> */}
 
         <div className="clients">
           <img src={client1} alt="client1" />
